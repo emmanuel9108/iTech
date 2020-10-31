@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTechERP", "iTechERP\iTechERP.csproj", "{6B0660C5-D12A-4A57-A6BE-CCE6914F92A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B0660C5-D12A-4A57-A6BE-CCE6914F92A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0660C5-D12A-4A57-A6BE-CCE6914F92A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0660C5-D12A-4A57-A6BE-CCE6914F92A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0660C5-D12A-4A57-A6BE-CCE6914F92A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBD320D8-6B67-485C-9497-731B45F9D059}
+	EndGlobalSection
+EndGlobal

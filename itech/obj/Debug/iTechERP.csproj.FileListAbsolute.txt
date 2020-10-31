@@ -1,0 +1,13 @@
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\bin\Debug\iTechERP.exe.config
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\bin\Debug\iTechERP.exe
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\bin\Debug\iTechERP.pdb
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.csprojAssemblyReference.cache
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.Properties.Resources.resources
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.csproj.GenerateResource.cache
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.csproj.CoreCompileInputs.cache
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.csproj.CopyComplete
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.exe
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.pdb
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.splash.resources
+C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.Login.resources

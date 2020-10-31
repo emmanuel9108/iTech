@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace itech
+namespace iTechERP
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace itech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new iTech1());
+            Application.Run(new splash());
         }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace itech.Properties
+namespace iTechERP.Properties
 {
 
 
