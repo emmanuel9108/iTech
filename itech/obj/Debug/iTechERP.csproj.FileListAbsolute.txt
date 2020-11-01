@@ -11,3 +11,15 @@ C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\
 C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.pdb
 C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.splash.resources
 C:\Users\johan\Documents\UTESA\Proyecto de Grado\Proyecto\iTechERP\iTechERP\obj\Debug\iTechERP.Login.resources
+C:\Users\johan\source\repos\iTech\itech\bin\Debug\iTechERP.exe.config
+C:\Users\johan\source\repos\iTech\itech\bin\Debug\iTechERP.exe
+C:\Users\johan\source\repos\iTech\itech\bin\Debug\iTechERP.pdb
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csprojAssemblyReference.cache
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.Login.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.splash.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.Properties.Resources.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csproj.GenerateResource.cache
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csproj.CoreCompileInputs.cache
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csproj.CopyComplete
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.exe
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.pdb
