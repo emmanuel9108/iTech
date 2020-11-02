@@ -23,3 +23,5 @@ C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csproj.CoreCompileInp
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.csproj.CopyComplete
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.exe
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.pdb
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.MenuPrincipal.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.HR_prueba.resources
