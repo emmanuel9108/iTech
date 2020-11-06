@@ -79,6 +79,8 @@ namespace iTechERP
                     lblkProductos.LinkColor = Temas.SecondaryColor;
                     lblkUsuarios.LinkColor = Temas.SecondaryColor;
                     lblkRolesUsuarios.LinkColor = Temas.SecondaryColor;
+                    lblkCxC.LinkColor = Temas.SecondaryColor;
+                    lblkCxP.LinkColor = Temas.SecondaryColor;
                 }
             }
         }
@@ -122,11 +124,13 @@ namespace iTechERP
                 panelRecursosHumanos.Width = 10;
                 panelSeguridad.Width = 10;
                 panelSistema.Width = 10;
+                panelFinanzas.Width = 10;
                 panelVentas.BackColor = Color.White;
                 panelCompras.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
+                panelFinanzas.BackColor = Color.White;
             Reset();
         }
 
@@ -153,12 +157,14 @@ namespace iTechERP
                 panelCompras.Width = 220;
                 panelVentas.Width = 10;
                 panelRecursosHumanos.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSeguridad.Width = 10;
                 panelSistema.Width = 10;
                 panelCompras.BringToFront();
 
                 panelVentas.BackColor = Color.White;
                 panelCompras.BackColor = Color.FromArgb(51, 51, 76);
+                panelFinanzas.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
@@ -168,6 +174,7 @@ namespace iTechERP
                 panelCompras.Width = 10;
                 panelRecursosHumanos.Width = 10;
                 panelSeguridad.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSistema.Width = 10;
                 panelVentas.Width = 220;
                 panelVentas.BringToFront();
@@ -175,6 +182,7 @@ namespace iTechERP
                 panelCompras.BackColor = Color.White;
                 panelVentas.BackColor = Color.FromArgb(51, 51, 76);
                 panelRecursosHumanos.BackColor = Color.White;
+                panelFinanzas.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
             }
@@ -184,12 +192,14 @@ namespace iTechERP
                 panelVentas.Width = 10;
                 panelRecursosHumanos.Width = 220;
                 panelSeguridad.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSistema.Width = 10;
                 panelRecursosHumanos.BringToFront();
 
                 panelCompras.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.FromArgb(51, 51, 76);
                 panelVentas.BackColor = Color.White;
+                panelFinanzas.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
             }
@@ -198,12 +208,14 @@ namespace iTechERP
                 panelCompras.Width = 10;
                 panelVentas.Width = 10;
                 panelRecursosHumanos.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSeguridad.Width = 220;
                 panelSistema.Width = 10;
                 panelSeguridad.BringToFront();
 
                 panelCompras.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.FromArgb(51, 51, 76);
+                panelFinanzas.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.White;
                 panelVentas.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
@@ -213,12 +225,31 @@ namespace iTechERP
                 panelCompras.Width = 10;
                 panelVentas.Width = 10;
                 panelRecursosHumanos.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSistema.Width = 220;
                 panelSeguridad.Width = 10;
                 panelSistema.BringToFront();
 
                 panelCompras.BackColor = Color.White;
                 panelSistema.BackColor = Color.FromArgb(51, 51, 76);
+                panelFinanzas.BackColor = Color.White;
+                panelRecursosHumanos.BackColor = Color.White;
+                panelSeguridad.BackColor = Color.White;
+                panelVentas.BackColor = Color.White;
+            }
+            else if (panel == "Finanzas")
+            {
+                panelCompras.Width = 10;
+                panelVentas.Width = 10;
+                panelRecursosHumanos.Width = 10;
+                panelFinanzas.Width = 220;
+                panelSistema.Width = 10;
+                panelSeguridad.Width = 10;
+                panelFinanzas.BringToFront();
+
+                panelCompras.BackColor = Color.White;
+                panelFinanzas.BackColor = Color.FromArgb(51, 51, 76);
+                panelSistema.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
                 panelVentas.BackColor = Color.White;
@@ -229,12 +260,14 @@ namespace iTechERP
                 panelVentas.Width = 10;
                 panelRecursosHumanos.Width = 10;
                 panelSeguridad.Width = 10;
+                panelFinanzas.Width = 10;
                 panelSistema.Width = 10;
 
                 panelCompras.BackColor = Color.White;
                 panelVentas.BackColor = Color.White;
                 panelRecursosHumanos.BackColor = Color.White;
                 panelSeguridad.BackColor = Color.White;
+                panelFinanzas.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
             }
         }
@@ -338,6 +371,34 @@ namespace iTechERP
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblkCxP_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenChildForm(new fiCxP(), sender);
+        }
+
+        private void btnFinanzas_Click(object sender, EventArgs e)
+        {
+            if (panelSistema.Width == 220)
+            {
+                ResetPanels("Todos");
+            }
+            else
+            {
+                ResetPanels("Finanzas");
+                ActivateButton(sender);
+            }
+        }
+
+        private void lblkCxC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenChildForm(new fiCxC(), sender);
         }
     }
 }
