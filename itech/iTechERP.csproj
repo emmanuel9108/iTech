@@ -61,17 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fiCxC.cs">
+    <Compile Include="Saldo Por Antiguedad - CxC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fiCxC.Designer.cs">
-      <DependentUpon>fiCxC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fiCxP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fiCxP.Designer.cs">
-      <DependentUpon>fiCxP.cs</DependentUpon>
+    <Compile Include="Saldo Por Antiguedad - CxC.Designer.cs">
+      <DependentUpon>Saldo Por Antiguedad - CxC.cs</DependentUpon>
     </Compile>
     <Compile Include="fi_RepAntSaldoCxcResumido.cs">
       <AutoGen>True</AutoGen>
@@ -91,6 +85,12 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Saldo por Antiguedad - CxP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saldo por Antiguedad - CxP.Designer.cs">
+      <DependentUpon>Saldo por Antiguedad - CxP.cs</DependentUpon>
+    </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +106,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Temas.cs" />
-    <EmbeddedResource Include="fiCxC.resx">
-      <DependentUpon>fiCxC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fiCxP.resx">
-      <DependentUpon>fiCxP.cs</DependentUpon>
+    <EmbeddedResource Include="Saldo Por Antiguedad - CxC.resx">
+      <DependentUpon>Saldo Por Antiguedad - CxC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fi_RepAntSaldoCxcResumido.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -125,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saldo por Antiguedad - CxP.resx">
+      <DependentUpon>Saldo por Antiguedad - CxP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP
 {
-    public partial class fiCxP : Form
+    public partial class Saldo_por_Antiguedad___CxP : Form
     {
-        public fiCxP()
+        public Saldo_por_Antiguedad___CxP()
         {
             InitializeComponent();
         }

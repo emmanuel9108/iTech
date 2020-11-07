@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace iTechERP
 {
@@ -61,26 +62,6 @@ namespace iTechERP
                     Temas.PrimaryColor = color;
                     Temas.SecondaryColor = Temas.ChangeColorBrightness(color, 0.3);
                     btnCerrarFormHijo.Visible = true;
-                    lblkOrdenesCompras.LinkColor = Temas.SecondaryColor;
-                    lblkGPFacturas.LinkColor = Temas.SecondaryColor;
-                    lblkEntradas.LinkColor = Temas.SecondaryColor;
-                    lblkDevoluciones.LinkColor = Temas.SecondaryColor;
-                    lblkProveedores.LinkColor = Temas.SecondaryColor;
-                    lblkPagos.LinkColor = Temas.SecondaryColor;
-                    lblkInventario.LinkColor = Temas.SecondaryColor;
-                    lblkClientes.LinkColor = Temas.SecondaryColor;
-                    lblkOrdenesDeVentas.LinkColor = Temas.SecondaryColor;
-                    lblkVDFacturas.LinkColor = Temas.SecondaryColor;
-                    lblkIngresos.LinkColor = Temas.SecondaryColor;
-                    lblkDepartamentos.LinkColor = Temas.SecondaryColor;
-                    lblkPosiciones.LinkColor = Temas.SecondaryColor;
-                    lblkEmpleados.LinkColor = Temas.SecondaryColor;
-                    lblkNominas.LinkColor = Temas.SecondaryColor;
-                    lblkProductos.LinkColor = Temas.SecondaryColor;
-                    lblkUsuarios.LinkColor = Temas.SecondaryColor;
-                    lblkRolesUsuarios.LinkColor = Temas.SecondaryColor;
-                    lblkCxC.LinkColor = Temas.SecondaryColor;
-                    lblkCxP.LinkColor = Temas.SecondaryColor;
                 }
             }
         }
@@ -368,24 +349,9 @@ namespace iTechERP
             lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
         }
 
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblkCxP_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            OpenChildForm(new fiCxP(), sender);
-        }
-
         private void btnFinanzas_Click(object sender, EventArgs e)
         {
-            if (panelSistema.Width == 220)
+            if (panelFinanzas.Width == 220)
             {
                 ResetPanels("Todos");
             }
@@ -395,8 +361,15 @@ namespace iTechERP
                 ActivateButton(sender);
             }
         }
+        private void btnCxP_Click(object sender, EventArgs e)
+        {
+            //Process proceso = new Process();
+            //proceso.StartInfo.FileName = @"C:\Users\johan\source\repos\iTech\itech\fi_RepAntSaldoCxcResumido.rpt";
+            //proceso.Start();
+            OpenChildForm(new Saldo_por_Antiguedad___CxP(), sender);
+        }
 
-        private void lblkCxC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnCxC_Click(object sender, EventArgs e)
         {
             OpenChildForm(new fiCxC(), sender);
         }

@@ -1,6 +1,6 @@
 ﻿namespace iTechERP
 {
-    partial class fiCxP
+    partial class fiCxC
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fiCxC));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.fi_RepAntSaldoCxpResumido1 = new iTechERP.fi_RepAntSaldoCxpResumido();
+            this.fi_RepAntSaldoCxcResumido1 = new iTechERP.fi_RepAntSaldoCxcResumido();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = 0;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer1.DisplayBackgroundEdge = false;
+            this.crystalReportViewer1.DisplayStatusBar = false;
+            this.crystalReportViewer1.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.fi_RepAntSaldoCxpResumido1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(900, 534);
+            this.crystalReportViewer1.ReportSource = this.fi_RepAntSaldoCxcResumido1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(916, 711);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.crystalReportViewer1.ToolPanelWidth = 400;
             // 
-            // fiCxP
+            // fiCxC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 534);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1516, 711);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "fiCxP";
-            this.Text = "fiCxP";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "fiCxC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "fiCxC";
             this.ResumeLayout(false);
 
         }
@@ -64,6 +65,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private fi_RepAntSaldoCxpResumido fi_RepAntSaldoCxpResumido1;
+        private fi_RepAntSaldoCxcResumido fi_RepAntSaldoCxcResumido1;
     }
 }

@@ -35,34 +35,38 @@
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.panelVentas = new System.Windows.Forms.Panel();
-            this.lblVentas = new System.Windows.Forms.Label();
-            this.lblkIngresos = new System.Windows.Forms.LinkLabel();
-            this.lblkVDFacturas = new System.Windows.Forms.LinkLabel();
-            this.lblkOrdenesDeVentas = new System.Windows.Forms.LinkLabel();
-            this.lblkClientes = new System.Windows.Forms.LinkLabel();
             this.panelSistema = new System.Windows.Forms.Panel();
+            this.btnProductos = new System.Windows.Forms.Button();
             this.lblSistema = new System.Windows.Forms.Label();
-            this.lblkProductos = new System.Windows.Forms.LinkLabel();
             this.panelSeguridad = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnRolesUsuarios = new System.Windows.Forms.Button();
             this.lblSeguridad = new System.Windows.Forms.Label();
-            this.lblkRolesUsuarios = new System.Windows.Forms.LinkLabel();
-            this.lblkUsuarios = new System.Windows.Forms.LinkLabel();
             this.panelRecursosHumanos = new System.Windows.Forms.Panel();
+            this.btnDepartamentos = new System.Windows.Forms.Button();
+            this.btnPosiciones = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnNominas = new System.Windows.Forms.Button();
             this.lblRecursosHumanos = new System.Windows.Forms.Label();
-            this.lblkNominas = new System.Windows.Forms.LinkLabel();
-            this.lblkEmpleados = new System.Windows.Forms.LinkLabel();
-            this.lblkPosiciones = new System.Windows.Forms.LinkLabel();
-            this.lblkDepartamentos = new System.Windows.Forms.LinkLabel();
+            this.panelVentas = new System.Windows.Forms.Panel();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnOrdenesVenta = new System.Windows.Forms.Button();
+            this.btnFacturasVenta = new System.Windows.Forms.Button();
+            this.btnIngresos = new System.Windows.Forms.Button();
+            this.lblVentas = new System.Windows.Forms.Label();
             this.panelCompras = new System.Windows.Forms.Panel();
+            this.btnOrdenesCompras = new System.Windows.Forms.Button();
+            this.btnFacturasCompra = new System.Windows.Forms.Button();
+            this.btnEntradaMercancia = new System.Windows.Forms.Button();
+            this.btnDevoluciones = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
+            this.btnPagos = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
             this.lblCompras = new System.Windows.Forms.Label();
-            this.lblkInventario = new System.Windows.Forms.LinkLabel();
-            this.lblkPagos = new System.Windows.Forms.LinkLabel();
-            this.lblkProveedores = new System.Windows.Forms.LinkLabel();
-            this.lblkDevoluciones = new System.Windows.Forms.LinkLabel();
-            this.lblkEntradas = new System.Windows.Forms.LinkLabel();
-            this.lblkGPFacturas = new System.Windows.Forms.LinkLabel();
-            this.lblkOrdenesCompras = new System.Windows.Forms.LinkLabel();
+            this.panelFinanzas = new System.Windows.Forms.Panel();
+            this.btnCxC = new System.Windows.Forms.Button();
+            this.btnCxP = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
@@ -72,43 +76,42 @@
             this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnCerrarFormHijo = new System.Windows.Forms.Button();
+            this.btnLogOut = new FontAwesome.Sharp.IconButton();
             this.btnSistema = new FontAwesome.Sharp.IconButton();
             this.btnSeguridad = new FontAwesome.Sharp.IconButton();
+            this.btnFinanzas = new FontAwesome.Sharp.IconButton();
             this.btnRecursosHumanos = new FontAwesome.Sharp.IconButton();
             this.btnVentas = new FontAwesome.Sharp.IconButton();
             this.btnCompras = new FontAwesome.Sharp.IconButton();
-            this.btnFinanzas = new FontAwesome.Sharp.IconButton();
-            this.panelFinanzas = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblkCxC = new System.Windows.Forms.LinkLabel();
-            this.lblkCxP = new System.Windows.Forms.LinkLabel();
             this.panelMenu.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelDesktop.SuspendLayout();
-            this.panelVentas.SuspendLayout();
             this.panelSistema.SuspendLayout();
             this.panelSeguridad.SuspendLayout();
             this.panelRecursosHumanos.SuspendLayout();
+            this.panelVentas.SuspendLayout();
             this.panelCompras.SuspendLayout();
+            this.panelFinanzas.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelFinanzas.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnFinanzas);
+            this.panelMenu.Controls.Add(this.btnLogOut);
             this.panelMenu.Controls.Add(this.btnSistema);
             this.panelMenu.Controls.Add(this.btnSeguridad);
+            this.panelMenu.Controls.Add(this.btnFinanzas);
             this.panelMenu.Controls.Add(this.btnRecursosHumanos);
             this.panelMenu.Controls.Add(this.btnVentas);
             this.panelMenu.Controls.Add(this.btnCompras);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 739);
+            this.panelMenu.Size = new System.Drawing.Size(220, 738);
             this.panelMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -117,6 +120,7 @@
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 0;
@@ -131,8 +135,9 @@
             this.panelTitulo.Controls.Add(this.lblTitulo);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(220, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(957, 80);
+            this.panelTitulo.Size = new System.Drawing.Size(1307, 80);
             this.panelTitulo.TabIndex = 1;
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 
@@ -142,7 +147,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(435, 25);
+            this.lblTitulo.Location = new System.Drawing.Point(610, 25);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(87, 31);
             this.lblTitulo.TabIndex = 0;
@@ -151,192 +156,183 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.panelFinanzas);
-            this.panelDesktop.Controls.Add(this.panelVentas);
             this.panelDesktop.Controls.Add(this.panelSistema);
             this.panelDesktop.Controls.Add(this.panelSeguridad);
             this.panelDesktop.Controls.Add(this.panelRecursosHumanos);
-            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Controls.Add(this.panelVentas);
             this.panelDesktop.Controls.Add(this.panelCompras);
+            this.panelDesktop.Controls.Add(this.panelFinanzas);
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 80);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(957, 659);
+            this.panelDesktop.Size = new System.Drawing.Size(1307, 658);
             this.panelDesktop.TabIndex = 2;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // panelVentas
-            // 
-            this.panelVentas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelVentas.BackColor = System.Drawing.Color.White;
-            this.panelVentas.Controls.Add(this.lblVentas);
-            this.panelVentas.Controls.Add(this.lblkIngresos);
-            this.panelVentas.Controls.Add(this.lblkVDFacturas);
-            this.panelVentas.Controls.Add(this.lblkOrdenesDeVentas);
-            this.panelVentas.Controls.Add(this.lblkClientes);
-            this.panelVentas.Location = new System.Drawing.Point(0, 0);
-            this.panelVentas.Name = "panelVentas";
-            this.panelVentas.Size = new System.Drawing.Size(10, 659);
-            this.panelVentas.TabIndex = 8;
-            // 
-            // lblVentas
-            // 
-            this.lblVentas.AutoSize = true;
-            this.lblVentas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentas.ForeColor = System.Drawing.Color.White;
-            this.lblVentas.Location = new System.Drawing.Point(81, 27);
-            this.lblVentas.Name = "lblVentas";
-            this.lblVentas.Size = new System.Drawing.Size(59, 20);
-            this.lblVentas.TabIndex = 4;
-            this.lblVentas.Text = "Ventas";
-            // 
-            // lblkIngresos
-            // 
-            this.lblkIngresos.AutoSize = true;
-            this.lblkIngresos.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkIngresos.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkIngresos.Location = new System.Drawing.Point(12, 203);
-            this.lblkIngresos.Name = "lblkIngresos";
-            this.lblkIngresos.Size = new System.Drawing.Size(124, 19);
-            this.lblkIngresos.TabIndex = 3;
-            this.lblkIngresos.TabStop = true;
-            this.lblkIngresos.Text = "VD004 - Ingresos";
-            // 
-            // lblkVDFacturas
-            // 
-            this.lblkVDFacturas.AutoSize = true;
-            this.lblkVDFacturas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkVDFacturas.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkVDFacturas.Location = new System.Drawing.Point(12, 162);
-            this.lblkVDFacturas.Name = "lblkVDFacturas";
-            this.lblkVDFacturas.Size = new System.Drawing.Size(124, 19);
-            this.lblkVDFacturas.TabIndex = 2;
-            this.lblkVDFacturas.TabStop = true;
-            this.lblkVDFacturas.Text = "VD003 - Facturas";
-            // 
-            // lblkOrdenesDeVentas
-            // 
-            this.lblkOrdenesDeVentas.AutoSize = true;
-            this.lblkOrdenesDeVentas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkOrdenesDeVentas.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkOrdenesDeVentas.Location = new System.Drawing.Point(12, 121);
-            this.lblkOrdenesDeVentas.Name = "lblkOrdenesDeVentas";
-            this.lblkOrdenesDeVentas.Size = new System.Drawing.Size(197, 19);
-            this.lblkOrdenesDeVentas.TabIndex = 1;
-            this.lblkOrdenesDeVentas.TabStop = true;
-            this.lblkOrdenesDeVentas.Text = "VD002 - Ordenes de Ventas";
-            // 
-            // lblkClientes
-            // 
-            this.lblkClientes.AutoSize = true;
-            this.lblkClientes.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkClientes.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkClientes.Location = new System.Drawing.Point(12, 80);
-            this.lblkClientes.Name = "lblkClientes";
-            this.lblkClientes.Size = new System.Drawing.Size(122, 19);
-            this.lblkClientes.TabIndex = 0;
-            this.lblkClientes.TabStop = true;
-            this.lblkClientes.Text = "VD001 - Clientes";
             // 
             // panelSistema
             // 
             this.panelSistema.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelSistema.BackColor = System.Drawing.Color.White;
+            this.panelSistema.Controls.Add(this.btnProductos);
             this.panelSistema.Controls.Add(this.lblSistema);
-            this.panelSistema.Controls.Add(this.lblkProductos);
             this.panelSistema.Location = new System.Drawing.Point(0, 0);
+            this.panelSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSistema.Name = "panelSistema";
-            this.panelSistema.Size = new System.Drawing.Size(10, 659);
+            this.panelSistema.Size = new System.Drawing.Size(10, 658);
             this.panelSistema.TabIndex = 10;
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.Black;
+            this.btnProductos.Location = new System.Drawing.Point(15, 100);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(191, 36);
+            this.btnProductos.TabIndex = 22;
+            this.btnProductos.Text = "SI001 - Productos";
+            this.btnProductos.UseVisualStyleBackColor = false;
             // 
             // lblSistema
             // 
             this.lblSistema.AutoSize = true;
             this.lblSistema.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSistema.ForeColor = System.Drawing.Color.White;
-            this.lblSistema.Location = new System.Drawing.Point(70, 27);
+            this.lblSistema.Location = new System.Drawing.Point(78, 27);
             this.lblSistema.Name = "lblSistema";
             this.lblSistema.Size = new System.Drawing.Size(65, 20);
             this.lblSistema.TabIndex = 4;
             this.lblSistema.Text = "Sistema";
-            // 
-            // lblkProductos
-            // 
-            this.lblkProductos.AutoSize = true;
-            this.lblkProductos.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkProductos.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkProductos.Location = new System.Drawing.Point(12, 80);
-            this.lblkProductos.Name = "lblkProductos";
-            this.lblkProductos.Size = new System.Drawing.Size(128, 19);
-            this.lblkProductos.TabIndex = 0;
-            this.lblkProductos.TabStop = true;
-            this.lblkProductos.Text = "SI001 - Productos";
             // 
             // panelSeguridad
             // 
             this.panelSeguridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelSeguridad.BackColor = System.Drawing.Color.White;
+            this.panelSeguridad.Controls.Add(this.btnUsuarios);
+            this.panelSeguridad.Controls.Add(this.btnRolesUsuarios);
             this.panelSeguridad.Controls.Add(this.lblSeguridad);
-            this.panelSeguridad.Controls.Add(this.lblkRolesUsuarios);
-            this.panelSeguridad.Controls.Add(this.lblkUsuarios);
             this.panelSeguridad.Location = new System.Drawing.Point(0, 0);
+            this.panelSeguridad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSeguridad.Name = "panelSeguridad";
-            this.panelSeguridad.Size = new System.Drawing.Size(10, 659);
+            this.panelSeguridad.Size = new System.Drawing.Size(10, 658);
             this.panelSeguridad.TabIndex = 9;
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.Black;
+            this.btnUsuarios.Location = new System.Drawing.Point(15, 81);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(191, 36);
+            this.btnUsuarios.TabIndex = 22;
+            this.btnUsuarios.Text = "SE001 - Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            // 
+            // btnRolesUsuarios
+            // 
+            this.btnRolesUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnRolesUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnRolesUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRolesUsuarios.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRolesUsuarios.ForeColor = System.Drawing.Color.Black;
+            this.btnRolesUsuarios.Location = new System.Drawing.Point(15, 133);
+            this.btnRolesUsuarios.Name = "btnRolesUsuarios";
+            this.btnRolesUsuarios.Size = new System.Drawing.Size(191, 36);
+            this.btnRolesUsuarios.TabIndex = 21;
+            this.btnRolesUsuarios.Text = "SE002 - Roles Usuarios";
+            this.btnRolesUsuarios.UseVisualStyleBackColor = false;
             // 
             // lblSeguridad
             // 
             this.lblSeguridad.AutoSize = true;
             this.lblSeguridad.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguridad.ForeColor = System.Drawing.Color.White;
-            this.lblSeguridad.Location = new System.Drawing.Point(70, 27);
+            this.lblSeguridad.Location = new System.Drawing.Point(69, 27);
             this.lblSeguridad.Name = "lblSeguridad";
             this.lblSeguridad.Size = new System.Drawing.Size(81, 20);
             this.lblSeguridad.TabIndex = 4;
             this.lblSeguridad.Text = "Seguridad";
-            // 
-            // lblkRolesUsuarios
-            // 
-            this.lblkRolesUsuarios.AutoSize = true;
-            this.lblkRolesUsuarios.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkRolesUsuarios.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkRolesUsuarios.Location = new System.Drawing.Point(12, 123);
-            this.lblkRolesUsuarios.Name = "lblkRolesUsuarios";
-            this.lblkRolesUsuarios.Size = new System.Drawing.Size(182, 19);
-            this.lblkRolesUsuarios.TabIndex = 1;
-            this.lblkRolesUsuarios.TabStop = true;
-            this.lblkRolesUsuarios.Text = "SE002 - Roles de Usuarios";
-            // 
-            // lblkUsuarios
-            // 
-            this.lblkUsuarios.AutoSize = true;
-            this.lblkUsuarios.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkUsuarios.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkUsuarios.Location = new System.Drawing.Point(12, 80);
-            this.lblkUsuarios.Name = "lblkUsuarios";
-            this.lblkUsuarios.Size = new System.Drawing.Size(121, 19);
-            this.lblkUsuarios.TabIndex = 0;
-            this.lblkUsuarios.TabStop = true;
-            this.lblkUsuarios.Text = "SE001 - Usuarios";
             // 
             // panelRecursosHumanos
             // 
             this.panelRecursosHumanos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelRecursosHumanos.BackColor = System.Drawing.Color.White;
+            this.panelRecursosHumanos.Controls.Add(this.btnDepartamentos);
+            this.panelRecursosHumanos.Controls.Add(this.btnPosiciones);
+            this.panelRecursosHumanos.Controls.Add(this.btnEmpleados);
+            this.panelRecursosHumanos.Controls.Add(this.btnNominas);
             this.panelRecursosHumanos.Controls.Add(this.lblRecursosHumanos);
-            this.panelRecursosHumanos.Controls.Add(this.lblkNominas);
-            this.panelRecursosHumanos.Controls.Add(this.lblkEmpleados);
-            this.panelRecursosHumanos.Controls.Add(this.lblkPosiciones);
-            this.panelRecursosHumanos.Controls.Add(this.lblkDepartamentos);
             this.panelRecursosHumanos.Location = new System.Drawing.Point(0, 0);
+            this.panelRecursosHumanos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRecursosHumanos.Name = "panelRecursosHumanos";
-            this.panelRecursosHumanos.Size = new System.Drawing.Size(10, 659);
+            this.panelRecursosHumanos.Size = new System.Drawing.Size(10, 658);
             this.panelRecursosHumanos.TabIndex = 6;
+            // 
+            // btnDepartamentos
+            // 
+            this.btnDepartamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnDepartamentos.FlatAppearance.BorderSize = 0;
+            this.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartamentos.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartamentos.ForeColor = System.Drawing.Color.Black;
+            this.btnDepartamentos.Location = new System.Drawing.Point(15, 90);
+            this.btnDepartamentos.Name = "btnDepartamentos";
+            this.btnDepartamentos.Size = new System.Drawing.Size(191, 36);
+            this.btnDepartamentos.TabIndex = 22;
+            this.btnDepartamentos.Text = "RH001 - Departamentos";
+            this.btnDepartamentos.UseVisualStyleBackColor = false;
+            // 
+            // btnPosiciones
+            // 
+            this.btnPosiciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnPosiciones.FlatAppearance.BorderSize = 0;
+            this.btnPosiciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPosiciones.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPosiciones.ForeColor = System.Drawing.Color.Black;
+            this.btnPosiciones.Location = new System.Drawing.Point(15, 142);
+            this.btnPosiciones.Name = "btnPosiciones";
+            this.btnPosiciones.Size = new System.Drawing.Size(191, 36);
+            this.btnPosiciones.TabIndex = 21;
+            this.btnPosiciones.Text = "RH002 - Posiciones";
+            this.btnPosiciones.UseVisualStyleBackColor = false;
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.Color.Black;
+            this.btnEmpleados.Location = new System.Drawing.Point(15, 194);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(191, 36);
+            this.btnEmpleados.TabIndex = 20;
+            this.btnEmpleados.Text = "RH003 - Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
+            // 
+            // btnNominas
+            // 
+            this.btnNominas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnNominas.FlatAppearance.BorderSize = 0;
+            this.btnNominas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNominas.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNominas.ForeColor = System.Drawing.Color.Black;
+            this.btnNominas.Location = new System.Drawing.Point(15, 246);
+            this.btnNominas.Name = "btnNominas";
+            this.btnNominas.Size = new System.Drawing.Size(191, 36);
+            this.btnNominas.TabIndex = 19;
+            this.btnNominas.Text = "RH004 - Nomina";
+            this.btnNominas.UseVisualStyleBackColor = false;
             // 
             // lblRecursosHumanos
             // 
@@ -349,71 +345,205 @@
             this.lblRecursosHumanos.TabIndex = 5;
             this.lblRecursosHumanos.Text = "Recursos Humanos";
             // 
-            // lblkNominas
+            // panelVentas
             // 
-            this.lblkNominas.AutoSize = true;
-            this.lblkNominas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkNominas.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkNominas.Location = new System.Drawing.Point(12, 209);
-            this.lblkNominas.Name = "lblkNominas";
-            this.lblkNominas.Size = new System.Drawing.Size(124, 19);
-            this.lblkNominas.TabIndex = 3;
-            this.lblkNominas.TabStop = true;
-            this.lblkNominas.Text = "RH004 - Nóminas";
+            this.panelVentas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelVentas.BackColor = System.Drawing.Color.White;
+            this.panelVentas.Controls.Add(this.btnClientes);
+            this.panelVentas.Controls.Add(this.btnOrdenesVenta);
+            this.panelVentas.Controls.Add(this.btnFacturasVenta);
+            this.panelVentas.Controls.Add(this.btnIngresos);
+            this.panelVentas.Controls.Add(this.lblVentas);
+            this.panelVentas.Location = new System.Drawing.Point(0, 0);
+            this.panelVentas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelVentas.Name = "panelVentas";
+            this.panelVentas.Size = new System.Drawing.Size(10, 658);
+            this.panelVentas.TabIndex = 8;
             // 
-            // lblkEmpleados
+            // btnClientes
             // 
-            this.lblkEmpleados.AutoSize = true;
-            this.lblkEmpleados.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkEmpleados.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkEmpleados.Location = new System.Drawing.Point(12, 166);
-            this.lblkEmpleados.Name = "lblkEmpleados";
-            this.lblkEmpleados.Size = new System.Drawing.Size(141, 19);
-            this.lblkEmpleados.TabIndex = 2;
-            this.lblkEmpleados.TabStop = true;
-            this.lblkEmpleados.Text = "RH003 - Empleados";
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnClientes.Location = new System.Drawing.Point(15, 80);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(191, 36);
+            this.btnClientes.TabIndex = 18;
+            this.btnClientes.Text = "VD001 - Clientes";
+            this.btnClientes.UseVisualStyleBackColor = false;
             // 
-            // lblkPosiciones
+            // btnOrdenesVenta
             // 
-            this.lblkPosiciones.AutoSize = true;
-            this.lblkPosiciones.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkPosiciones.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkPosiciones.Location = new System.Drawing.Point(12, 123);
-            this.lblkPosiciones.Name = "lblkPosiciones";
-            this.lblkPosiciones.Size = new System.Drawing.Size(137, 19);
-            this.lblkPosiciones.TabIndex = 1;
-            this.lblkPosiciones.TabStop = true;
-            this.lblkPosiciones.Text = "RH002 - Posiciones";
+            this.btnOrdenesVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnOrdenesVenta.FlatAppearance.BorderSize = 0;
+            this.btnOrdenesVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenesVenta.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenesVenta.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenesVenta.Location = new System.Drawing.Point(15, 132);
+            this.btnOrdenesVenta.Name = "btnOrdenesVenta";
+            this.btnOrdenesVenta.Size = new System.Drawing.Size(191, 36);
+            this.btnOrdenesVenta.TabIndex = 17;
+            this.btnOrdenesVenta.Text = "VD002 - Ordenes Venta";
+            this.btnOrdenesVenta.UseVisualStyleBackColor = false;
             // 
-            // lblkDepartamentos
+            // btnFacturasVenta
             // 
-            this.lblkDepartamentos.AutoSize = true;
-            this.lblkDepartamentos.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkDepartamentos.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkDepartamentos.Location = new System.Drawing.Point(12, 80);
-            this.lblkDepartamentos.Name = "lblkDepartamentos";
-            this.lblkDepartamentos.Size = new System.Drawing.Size(174, 19);
-            this.lblkDepartamentos.TabIndex = 0;
-            this.lblkDepartamentos.TabStop = true;
-            this.lblkDepartamentos.Text = "RH001 - Departamentos";
+            this.btnFacturasVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnFacturasVenta.FlatAppearance.BorderSize = 0;
+            this.btnFacturasVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturasVenta.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturasVenta.ForeColor = System.Drawing.Color.Black;
+            this.btnFacturasVenta.Location = new System.Drawing.Point(15, 184);
+            this.btnFacturasVenta.Name = "btnFacturasVenta";
+            this.btnFacturasVenta.Size = new System.Drawing.Size(191, 36);
+            this.btnFacturasVenta.TabIndex = 16;
+            this.btnFacturasVenta.Text = "VD003 - Factura Venta";
+            this.btnFacturasVenta.UseVisualStyleBackColor = false;
+            // 
+            // btnIngresos
+            // 
+            this.btnIngresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnIngresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresos.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresos.ForeColor = System.Drawing.Color.Black;
+            this.btnIngresos.Location = new System.Drawing.Point(15, 236);
+            this.btnIngresos.Name = "btnIngresos";
+            this.btnIngresos.Size = new System.Drawing.Size(191, 36);
+            this.btnIngresos.TabIndex = 15;
+            this.btnIngresos.Text = "VD004 - Ingresos";
+            this.btnIngresos.UseVisualStyleBackColor = false;
+            // 
+            // lblVentas
+            // 
+            this.lblVentas.AutoSize = true;
+            this.lblVentas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentas.ForeColor = System.Drawing.Color.White;
+            this.lblVentas.Location = new System.Drawing.Point(81, 27);
+            this.lblVentas.Name = "lblVentas";
+            this.lblVentas.Size = new System.Drawing.Size(59, 20);
+            this.lblVentas.TabIndex = 4;
+            this.lblVentas.Text = "Ventas";
             // 
             // panelCompras
             // 
             this.panelCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelCompras.BackColor = System.Drawing.Color.White;
+            this.panelCompras.Controls.Add(this.btnOrdenesCompras);
+            this.panelCompras.Controls.Add(this.btnFacturasCompra);
+            this.panelCompras.Controls.Add(this.btnEntradaMercancia);
+            this.panelCompras.Controls.Add(this.btnDevoluciones);
+            this.panelCompras.Controls.Add(this.btnProveedores);
+            this.panelCompras.Controls.Add(this.btnPagos);
+            this.panelCompras.Controls.Add(this.btnInventario);
             this.panelCompras.Controls.Add(this.lblCompras);
-            this.panelCompras.Controls.Add(this.lblkInventario);
-            this.panelCompras.Controls.Add(this.lblkPagos);
-            this.panelCompras.Controls.Add(this.lblkProveedores);
-            this.panelCompras.Controls.Add(this.lblkDevoluciones);
-            this.panelCompras.Controls.Add(this.lblkEntradas);
-            this.panelCompras.Controls.Add(this.lblkGPFacturas);
-            this.panelCompras.Controls.Add(this.lblkOrdenesCompras);
             this.panelCompras.Location = new System.Drawing.Point(0, 0);
+            this.panelCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCompras.Name = "panelCompras";
-            this.panelCompras.Size = new System.Drawing.Size(10, 659);
+            this.panelCompras.Size = new System.Drawing.Size(10, 658);
             this.panelCompras.TabIndex = 7;
+            // 
+            // btnOrdenesCompras
+            // 
+            this.btnOrdenesCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnOrdenesCompras.FlatAppearance.BorderSize = 0;
+            this.btnOrdenesCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenesCompras.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenesCompras.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenesCompras.Location = new System.Drawing.Point(15, 72);
+            this.btnOrdenesCompras.Name = "btnOrdenesCompras";
+            this.btnOrdenesCompras.Size = new System.Drawing.Size(191, 36);
+            this.btnOrdenesCompras.TabIndex = 14;
+            this.btnOrdenesCompras.Text = "GP001 - Ordenes Compra";
+            this.btnOrdenesCompras.UseVisualStyleBackColor = false;
+            // 
+            // btnFacturasCompra
+            // 
+            this.btnFacturasCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnFacturasCompra.FlatAppearance.BorderSize = 0;
+            this.btnFacturasCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturasCompra.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturasCompra.ForeColor = System.Drawing.Color.Black;
+            this.btnFacturasCompra.Location = new System.Drawing.Point(15, 121);
+            this.btnFacturasCompra.Name = "btnFacturasCompra";
+            this.btnFacturasCompra.Size = new System.Drawing.Size(191, 36);
+            this.btnFacturasCompra.TabIndex = 13;
+            this.btnFacturasCompra.Text = "GP002 - Facturas";
+            this.btnFacturasCompra.UseVisualStyleBackColor = false;
+            // 
+            // btnEntradaMercancia
+            // 
+            this.btnEntradaMercancia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnEntradaMercancia.FlatAppearance.BorderSize = 0;
+            this.btnEntradaMercancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntradaMercancia.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntradaMercancia.ForeColor = System.Drawing.Color.Black;
+            this.btnEntradaMercancia.Location = new System.Drawing.Point(15, 170);
+            this.btnEntradaMercancia.Name = "btnEntradaMercancia";
+            this.btnEntradaMercancia.Size = new System.Drawing.Size(191, 36);
+            this.btnEntradaMercancia.TabIndex = 12;
+            this.btnEntradaMercancia.Text = "GP003 - Entrada Merc.";
+            this.btnEntradaMercancia.UseVisualStyleBackColor = false;
+            // 
+            // btnDevoluciones
+            // 
+            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnDevoluciones.FlatAppearance.BorderSize = 0;
+            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevoluciones.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevoluciones.ForeColor = System.Drawing.Color.Black;
+            this.btnDevoluciones.Location = new System.Drawing.Point(15, 219);
+            this.btnDevoluciones.Name = "btnDevoluciones";
+            this.btnDevoluciones.Size = new System.Drawing.Size(191, 36);
+            this.btnDevoluciones.TabIndex = 11;
+            this.btnDevoluciones.Text = "GP004 - Devoluciones";
+            this.btnDevoluciones.UseVisualStyleBackColor = false;
+            // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnProveedores.FlatAppearance.BorderSize = 0;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.ForeColor = System.Drawing.Color.Black;
+            this.btnProveedores.Location = new System.Drawing.Point(15, 268);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(191, 36);
+            this.btnProveedores.TabIndex = 10;
+            this.btnProveedores.Text = "GP005 - Proveedores";
+            this.btnProveedores.UseVisualStyleBackColor = false;
+            // 
+            // btnPagos
+            // 
+            this.btnPagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnPagos.FlatAppearance.BorderSize = 0;
+            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagos.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagos.ForeColor = System.Drawing.Color.Black;
+            this.btnPagos.Location = new System.Drawing.Point(15, 317);
+            this.btnPagos.Name = "btnPagos";
+            this.btnPagos.Size = new System.Drawing.Size(191, 36);
+            this.btnPagos.TabIndex = 9;
+            this.btnPagos.Text = "GP006 - Pagos";
+            this.btnPagos.UseVisualStyleBackColor = false;
+            // 
+            // btnInventario
+            // 
+            this.btnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnInventario.FlatAppearance.BorderSize = 0;
+            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventario.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventario.ForeColor = System.Drawing.Color.Black;
+            this.btnInventario.Location = new System.Drawing.Point(15, 366);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(191, 36);
+            this.btnInventario.TabIndex = 8;
+            this.btnInventario.Text = "GP007 - Inventario";
+            this.btnInventario.UseVisualStyleBackColor = false;
             // 
             // lblCompras
             // 
@@ -426,98 +556,70 @@
             this.lblCompras.TabIndex = 7;
             this.lblCompras.Text = "Compras";
             // 
-            // lblkInventario
+            // panelFinanzas
             // 
-            this.lblkInventario.AutoSize = true;
-            this.lblkInventario.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkInventario.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkInventario.Location = new System.Drawing.Point(9, 311);
-            this.lblkInventario.Name = "lblkInventario";
-            this.lblkInventario.Size = new System.Drawing.Size(133, 19);
-            this.lblkInventario.TabIndex = 6;
-            this.lblkInventario.TabStop = true;
-            this.lblkInventario.Text = "GP007 - Inventario";
+            this.panelFinanzas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelFinanzas.BackColor = System.Drawing.Color.White;
+            this.panelFinanzas.Controls.Add(this.btnCxC);
+            this.panelFinanzas.Controls.Add(this.btnCxP);
+            this.panelFinanzas.Controls.Add(this.label1);
+            this.panelFinanzas.Location = new System.Drawing.Point(0, 0);
+            this.panelFinanzas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelFinanzas.Name = "panelFinanzas";
+            this.panelFinanzas.Size = new System.Drawing.Size(10, 658);
+            this.panelFinanzas.TabIndex = 11;
             // 
-            // lblkPagos
+            // btnCxC
             // 
-            this.lblkPagos.AutoSize = true;
-            this.lblkPagos.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkPagos.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkPagos.Location = new System.Drawing.Point(9, 274);
-            this.lblkPagos.Name = "lblkPagos";
-            this.lblkPagos.Size = new System.Drawing.Size(106, 19);
-            this.lblkPagos.TabIndex = 5;
-            this.lblkPagos.TabStop = true;
-            this.lblkPagos.Text = "GP006 - Pagos";
+            this.btnCxC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnCxC.FlatAppearance.BorderSize = 0;
+            this.btnCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCxC.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCxC.ForeColor = System.Drawing.Color.Black;
+            this.btnCxC.Location = new System.Drawing.Point(15, 141);
+            this.btnCxC.Name = "btnCxC";
+            this.btnCxC.Size = new System.Drawing.Size(191, 36);
+            this.btnCxC.TabIndex = 7;
+            this.btnCxC.Text = "FI002 - CxC";
+            this.btnCxC.UseVisualStyleBackColor = false;
+            this.btnCxC.Click += new System.EventHandler(this.btnCxC_Click);
             // 
-            // lblkProveedores
+            // btnCxP
             // 
-            this.lblkProveedores.AutoSize = true;
-            this.lblkProveedores.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkProveedores.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkProveedores.Location = new System.Drawing.Point(9, 237);
-            this.lblkProveedores.Name = "lblkProveedores";
-            this.lblkProveedores.Size = new System.Drawing.Size(153, 19);
-            this.lblkProveedores.TabIndex = 4;
-            this.lblkProveedores.TabStop = true;
-            this.lblkProveedores.Text = "GP005 - Proveedores";
+            this.btnCxP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnCxP.FlatAppearance.BorderSize = 0;
+            this.btnCxP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCxP.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCxP.ForeColor = System.Drawing.Color.Black;
+            this.btnCxP.Location = new System.Drawing.Point(15, 82);
+            this.btnCxP.Name = "btnCxP";
+            this.btnCxP.Size = new System.Drawing.Size(191, 36);
+            this.btnCxP.TabIndex = 6;
+            this.btnCxP.Text = "FI001 - CxP";
+            this.btnCxP.UseVisualStyleBackColor = false;
+            this.btnCxP.Click += new System.EventHandler(this.btnCxP_Click);
             // 
-            // lblkDevoluciones
+            // label1
             // 
-            this.lblkDevoluciones.AutoSize = true;
-            this.lblkDevoluciones.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkDevoluciones.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkDevoluciones.Location = new System.Drawing.Point(9, 200);
-            this.lblkDevoluciones.Name = "lblkDevoluciones";
-            this.lblkDevoluciones.Size = new System.Drawing.Size(158, 19);
-            this.lblkDevoluciones.TabIndex = 3;
-            this.lblkDevoluciones.TabStop = true;
-            this.lblkDevoluciones.Text = "GP004 - Devoluciones";
-            // 
-            // lblkEntradas
-            // 
-            this.lblkEntradas.AutoSize = true;
-            this.lblkEntradas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkEntradas.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkEntradas.Location = new System.Drawing.Point(9, 163);
-            this.lblkEntradas.Name = "lblkEntradas";
-            this.lblkEntradas.Size = new System.Drawing.Size(194, 19);
-            this.lblkEntradas.TabIndex = 2;
-            this.lblkEntradas.TabStop = true;
-            this.lblkEntradas.Text = "GP003 - Entrada Mercancía";
-            // 
-            // lblkGPFacturas
-            // 
-            this.lblkGPFacturas.AutoSize = true;
-            this.lblkGPFacturas.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkGPFacturas.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkGPFacturas.Location = new System.Drawing.Point(9, 126);
-            this.lblkGPFacturas.Name = "lblkGPFacturas";
-            this.lblkGPFacturas.Size = new System.Drawing.Size(123, 19);
-            this.lblkGPFacturas.TabIndex = 1;
-            this.lblkGPFacturas.TabStop = true;
-            this.lblkGPFacturas.Text = "GP002 - Facturas";
-            // 
-            // lblkOrdenesCompras
-            // 
-            this.lblkOrdenesCompras.AutoSize = true;
-            this.lblkOrdenesCompras.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkOrdenesCompras.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkOrdenesCompras.Location = new System.Drawing.Point(9, 89);
-            this.lblkOrdenesCompras.Name = "lblkOrdenesCompras";
-            this.lblkOrdenesCompras.Size = new System.Drawing.Size(211, 19);
-            this.lblkOrdenesCompras.TabIndex = 0;
-            this.lblkOrdenesCompras.TabStop = true;
-            this.lblkOrdenesCompras.Text = "GP001 - Ordenes de Compras";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Finanzas";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblFecha);
             this.panel1.Controls.Add(this.lblHora);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 628);
+            this.panel1.Location = new System.Drawing.Point(0, 627);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 31);
+            this.panel1.Size = new System.Drawing.Size(1307, 31);
             this.panel1.TabIndex = 3;
             // 
             // lblFecha
@@ -525,7 +627,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblFecha.Font = new System.Drawing.Font("Ubuntu", 12F);
-            this.lblFecha.Location = new System.Drawing.Point(821, 0);
+            this.lblFecha.Location = new System.Drawing.Point(1171, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(68, 25);
             this.lblFecha.TabIndex = 1;
@@ -536,7 +638,7 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblHora.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(889, 0);
+            this.lblHora.Location = new System.Drawing.Point(1239, 0);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(68, 25);
             this.lblHora.TabIndex = 2;
@@ -551,7 +653,8 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(257, 262);
+            this.pictureBox1.Location = new System.Drawing.Point(432, 262);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(560, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -568,10 +671,11 @@
             this.btnRestaurar.IconColor = System.Drawing.Color.Black;
             this.btnRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRestaurar.IconSize = 32;
-            this.btnRestaurar.Location = new System.Drawing.Point(895, 17);
+            this.btnRestaurar.Location = new System.Drawing.Point(1245, 17);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Rotation = 0D;
-            this.btnRestaurar.Size = new System.Drawing.Size(30, 30);
+            this.btnRestaurar.Size = new System.Drawing.Size(29, 30);
             this.btnRestaurar.TabIndex = 5;
             this.btnRestaurar.UseVisualStyleBackColor = true;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -586,10 +690,11 @@
             this.btnMinimizar.IconColor = System.Drawing.Color.Black;
             this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimizar.IconSize = 32;
-            this.btnMinimizar.Location = new System.Drawing.Point(865, 17);
+            this.btnMinimizar.Location = new System.Drawing.Point(1215, 17);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Rotation = 0D;
-            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimizar.Size = new System.Drawing.Size(29, 30);
             this.btnMinimizar.TabIndex = 4;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
@@ -604,10 +709,11 @@
             this.btnCerrar.IconColor = System.Drawing.Color.Black;
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 32;
-            this.btnCerrar.Location = new System.Drawing.Point(924, 17);
+            this.btnCerrar.Location = new System.Drawing.Point(1274, 17);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(30, 30);
+            this.btnCerrar.Size = new System.Drawing.Size(29, 30);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
@@ -619,11 +725,37 @@
             this.btnCerrarFormHijo.FlatAppearance.BorderSize = 0;
             this.btnCerrarFormHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarFormHijo.Location = new System.Drawing.Point(16, 26);
+            this.btnCerrarFormHijo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrarFormHijo.Name = "btnCerrarFormHijo";
-            this.btnCerrarFormHijo.Size = new System.Drawing.Size(33, 29);
+            this.btnCerrarFormHijo.Size = new System.Drawing.Size(33, 30);
             this.btnCerrarFormHijo.TabIndex = 0;
             this.btnCerrarFormHijo.UseVisualStyleBackColor = true;
             this.btnCerrarFormHijo.Click += new System.EventHandler(this.btnCerrarFormHijo_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnLogOut.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.btnLogOut.IconColor = System.Drawing.Color.White;
+            this.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogOut.IconSize = 32;
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 678);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnLogOut.Rotation = 0D;
+            this.btnLogOut.Size = new System.Drawing.Size(220, 60);
+            this.btnLogOut.TabIndex = 7;
+            this.btnLogOut.Text = "   Cerrar Sección";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogOut.UseVisualStyleBackColor = true;
             // 
             // btnSistema
             // 
@@ -638,7 +770,8 @@
             this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSistema.IconSize = 32;
             this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.Location = new System.Drawing.Point(0, 320);
+            this.btnSistema.Location = new System.Drawing.Point(0, 380);
+            this.btnSistema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSistema.Name = "btnSistema";
             this.btnSistema.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSistema.Rotation = 0D;
@@ -663,7 +796,8 @@
             this.btnSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSeguridad.IconSize = 32;
             this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 260);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 320);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSeguridad.Rotation = 0D;
@@ -674,6 +808,32 @@
             this.btnSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSeguridad.UseVisualStyleBackColor = true;
             this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
+            // 
+            // btnFinanzas
+            // 
+            this.btnFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFinanzas.FlatAppearance.BorderSize = 0;
+            this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinanzas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnFinanzas.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinanzas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFinanzas.IconChar = FontAwesome.Sharp.IconChar.Landmark;
+            this.btnFinanzas.IconColor = System.Drawing.Color.White;
+            this.btnFinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFinanzas.IconSize = 32;
+            this.btnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanzas.Location = new System.Drawing.Point(0, 260);
+            this.btnFinanzas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFinanzas.Name = "btnFinanzas";
+            this.btnFinanzas.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnFinanzas.Rotation = 0D;
+            this.btnFinanzas.Size = new System.Drawing.Size(220, 60);
+            this.btnFinanzas.TabIndex = 4;
+            this.btnFinanzas.Text = "   Finanzas";
+            this.btnFinanzas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFinanzas.UseVisualStyleBackColor = true;
+            this.btnFinanzas.Click += new System.EventHandler(this.btnFinanzas_Click);
             // 
             // btnRecursosHumanos
             // 
@@ -689,6 +849,7 @@
             this.btnRecursosHumanos.IconSize = 32;
             this.btnRecursosHumanos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecursosHumanos.Location = new System.Drawing.Point(0, 200);
+            this.btnRecursosHumanos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRecursosHumanos.Name = "btnRecursosHumanos";
             this.btnRecursosHumanos.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnRecursosHumanos.Rotation = 0D;
@@ -714,6 +875,7 @@
             this.btnVentas.IconSize = 32;
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentas.Location = new System.Drawing.Point(0, 140);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnVentas.Rotation = 0D;
@@ -739,6 +901,7 @@
             this.btnCompras.IconSize = 32;
             this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCompras.Location = new System.Drawing.Point(0, 80);
+            this.btnCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCompras.Name = "btnCompras";
             this.btnCompras.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnCompras.Rotation = 0D;
@@ -750,93 +913,17 @@
             this.btnCompras.UseVisualStyleBackColor = true;
             this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
-            // btnFinanzas
-            // 
-            this.btnFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFinanzas.FlatAppearance.BorderSize = 0;
-            this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanzas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnFinanzas.Font = new System.Drawing.Font("Ubuntu", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinanzas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFinanzas.IconChar = FontAwesome.Sharp.IconChar.Landmark;
-            this.btnFinanzas.IconColor = System.Drawing.Color.White;
-            this.btnFinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFinanzas.IconSize = 32;
-            this.btnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanzas.Location = new System.Drawing.Point(0, 380);
-            this.btnFinanzas.Name = "btnFinanzas";
-            this.btnFinanzas.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnFinanzas.Rotation = 0D;
-            this.btnFinanzas.Size = new System.Drawing.Size(220, 60);
-            this.btnFinanzas.TabIndex = 4;
-            this.btnFinanzas.Text = "   Finanzas";
-            this.btnFinanzas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFinanzas.UseVisualStyleBackColor = true;
-            this.btnFinanzas.Click += new System.EventHandler(this.btnFinanzas_Click);
-            // 
-            // panelFinanzas
-            // 
-            this.panelFinanzas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelFinanzas.BackColor = System.Drawing.Color.White;
-            this.panelFinanzas.Controls.Add(this.label1);
-            this.panelFinanzas.Controls.Add(this.lblkCxC);
-            this.panelFinanzas.Controls.Add(this.lblkCxP);
-            this.panelFinanzas.Location = new System.Drawing.Point(0, 0);
-            this.panelFinanzas.Name = "panelFinanzas";
-            this.panelFinanzas.Size = new System.Drawing.Size(220, 659);
-            this.panelFinanzas.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(75, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Finanzas";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblkCxC
-            // 
-            this.lblkCxC.AutoSize = true;
-            this.lblkCxC.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkCxC.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkCxC.Location = new System.Drawing.Point(12, 123);
-            this.lblkCxC.Name = "lblkCxC";
-            this.lblkCxC.Size = new System.Drawing.Size(84, 19);
-            this.lblkCxC.TabIndex = 1;
-            this.lblkCxC.TabStop = true;
-            this.lblkCxC.Text = "FI002 - CxC";
-            this.lblkCxC.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblkCxC_LinkClicked);
-            // 
-            // lblkCxP
-            // 
-            this.lblkCxP.AutoSize = true;
-            this.lblkCxP.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblkCxP.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(136)))), ((int)(((byte)(255)))));
-            this.lblkCxP.Location = new System.Drawing.Point(12, 80);
-            this.lblkCxP.Name = "lblkCxP";
-            this.lblkCxP.Size = new System.Drawing.Size(83, 19);
-            this.lblkCxP.TabIndex = 0;
-            this.lblkCxP.TabStop = true;
-            this.lblkCxP.Text = "FI001 - CxP";
-            this.lblkCxP.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblkCxP_LinkClicked);
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 739);
+            this.ClientSize = new System.Drawing.Size(1527, 738);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(950, 500);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(949, 500);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
@@ -845,21 +932,21 @@
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
-            this.panelVentas.ResumeLayout(false);
-            this.panelVentas.PerformLayout();
             this.panelSistema.ResumeLayout(false);
             this.panelSistema.PerformLayout();
             this.panelSeguridad.ResumeLayout(false);
             this.panelSeguridad.PerformLayout();
             this.panelRecursosHumanos.ResumeLayout(false);
             this.panelRecursosHumanos.PerformLayout();
+            this.panelVentas.ResumeLayout(false);
+            this.panelVentas.PerformLayout();
             this.panelCompras.ResumeLayout(false);
             this.panelCompras.PerformLayout();
+            this.panelFinanzas.ResumeLayout(false);
+            this.panelFinanzas.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelFinanzas.ResumeLayout(false);
-            this.panelFinanzas.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -882,32 +969,14 @@
         private FontAwesome.Sharp.IconButton btnMinimizar;
         private FontAwesome.Sharp.IconButton btnCerrar;
         private System.Windows.Forms.Panel panelRecursosHumanos;
-        private System.Windows.Forms.LinkLabel lblkDepartamentos;
-        private System.Windows.Forms.LinkLabel lblkNominas;
-        private System.Windows.Forms.LinkLabel lblkEmpleados;
-        private System.Windows.Forms.LinkLabel lblkPosiciones;
         private System.Windows.Forms.Panel panelCompras;
-        private System.Windows.Forms.LinkLabel lblkDevoluciones;
-        private System.Windows.Forms.LinkLabel lblkEntradas;
-        private System.Windows.Forms.LinkLabel lblkGPFacturas;
-        private System.Windows.Forms.LinkLabel lblkOrdenesCompras;
-        private System.Windows.Forms.LinkLabel lblkInventario;
-        private System.Windows.Forms.LinkLabel lblkPagos;
-        private System.Windows.Forms.LinkLabel lblkProveedores;
         private System.Windows.Forms.Panel panelVentas;
         private System.Windows.Forms.Label lblVentas;
-        private System.Windows.Forms.LinkLabel lblkIngresos;
-        private System.Windows.Forms.LinkLabel lblkVDFacturas;
-        private System.Windows.Forms.LinkLabel lblkOrdenesDeVentas;
-        private System.Windows.Forms.LinkLabel lblkClientes;
         private System.Windows.Forms.Label lblCompras;
         private System.Windows.Forms.Panel panelSistema;
         private System.Windows.Forms.Label lblSistema;
-        private System.Windows.Forms.LinkLabel lblkProductos;
         private System.Windows.Forms.Panel panelSeguridad;
         private System.Windows.Forms.Label lblSeguridad;
-        private System.Windows.Forms.LinkLabel lblkRolesUsuarios;
-        private System.Windows.Forms.LinkLabel lblkUsuarios;
         private System.Windows.Forms.Label lblRecursosHumanos;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
@@ -916,7 +985,26 @@
         private FontAwesome.Sharp.IconButton btnFinanzas;
         private System.Windows.Forms.Panel panelFinanzas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel lblkCxC;
-        private System.Windows.Forms.LinkLabel lblkCxP;
+        private System.Windows.Forms.Button btnCxP;
+        private System.Windows.Forms.Button btnCxC;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnRolesUsuarios;
+        private System.Windows.Forms.Button btnDepartamentos;
+        private System.Windows.Forms.Button btnPosiciones;
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnNominas;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnOrdenesVenta;
+        private System.Windows.Forms.Button btnFacturasVenta;
+        private System.Windows.Forms.Button btnIngresos;
+        private System.Windows.Forms.Button btnOrdenesCompras;
+        private System.Windows.Forms.Button btnFacturasCompra;
+        private System.Windows.Forms.Button btnEntradaMercancia;
+        private System.Windows.Forms.Button btnDevoluciones;
+        private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Button btnPagos;
+        private System.Windows.Forms.Button btnInventario;
+        private FontAwesome.Sharp.IconButton btnLogOut;
     }
 }
