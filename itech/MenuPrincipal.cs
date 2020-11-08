@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace iTechERP
 {
@@ -79,7 +81,7 @@ namespace iTechERP
             }
         }
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -96,7 +98,7 @@ namespace iTechERP
         }
 
 
-        private void btnCerrarFormHijo_Click(object sender, EventArgs e)
+        public void btnCerrarFormHijo_Click(object sender, EventArgs e)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -115,7 +117,7 @@ namespace iTechERP
             Reset();
         }
 
-        private void Reset()
+        public void Reset()
         {
             DisableButton();
             lblTitulo.Text = "HOME";
@@ -363,15 +365,12 @@ namespace iTechERP
         }
         private void btnCxP_Click(object sender, EventArgs e)
         {
-            //Process proceso = new Process();
-            //proceso.StartInfo.FileName = @"C:\Users\johan\source\repos\iTech\itech\fi_RepAntSaldoCxcResumido.rpt";
-            //proceso.Start();
-            OpenChildForm(new Saldo_por_Antiguedad___CxP(), sender);
+            OpenChildForm(new ObjetosImpresionesCxP(), sender);
         }
 
         private void btnCxC_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new fiCxC(), sender);
+            OpenChildForm(new ObjetosImpresionesCxC(), sender);
         }
     }
 }

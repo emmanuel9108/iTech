@@ -44,5 +44,9 @@ C:\Users\johan\source\repos\iTech\itech\bin\Debug\CrystalDecisions.ReportAppServ
 C:\Users\johan\source\repos\iTech\itech\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\johan\source\repos\iTech\itech\bin\Debug\stdole.dll
 C:\Users\johan\source\repos\iTech\itech\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
-C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.fiCxC.resources
-C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Saldo_por_Antiguedad___CxP.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCXP.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCxC.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCxPDetallado.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCxCDetallado.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.ObjetosImpresionesCxP.resources
+C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.ObjetosImpresionesCxC.resources

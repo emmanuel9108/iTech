@@ -61,35 +61,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Saldo Por Antiguedad - CxC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Saldo Por Antiguedad - CxC.Designer.cs">
-      <DependentUpon>Saldo Por Antiguedad - CxC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fi_RepAntSaldoCxcResumido.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fi_RepAntSaldoCxcResumido.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="fi_RepAntSaldoCxpResumido.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fi_RepAntSaldoCxpResumido.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Saldo por Antiguedad - CxP.cs">
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Saldo por Antiguedad - CxP.Designer.cs">
-      <DependentUpon>Saldo por Antiguedad - CxP.cs</DependentUpon>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxC.Designer.cs">
+      <DependentUpon>SaldoPorAntiguedadCxC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCXP.Designer.cs">
+      <DependentUpon>SaldoPorAntiguedadCXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxPDetallado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxPDetallado.Designer.cs">
+      <DependentUpon>SaldoPorAntiguedadCxPDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxCDetallado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\SaldoPorAntiguedadCxCDetallado.Designer.cs">
+      <DependentUpon>SaldoPorAntiguedadCxCDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\ObjetosImpresionesCxP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\ObjetosImpresionesCxP.Designer.cs">
+      <DependentUpon>ObjetosImpresionesCxP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\ObjetosImpresionesCxC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\ObjetosImpresionesCxC.Designer.cs">
+      <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
     </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
@@ -106,25 +118,29 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Temas.cs" />
-    <EmbeddedResource Include="Saldo Por Antiguedad - CxC.resx">
-      <DependentUpon>Saldo Por Antiguedad - CxC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fi_RepAntSaldoCxcResumido.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>fi_RepAntSaldoCxcResumido.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fi_RepAntSaldoCxpResumido.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>fi_RepAntSaldoCxpResumido.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Saldo por Antiguedad - CxP.resx">
-      <DependentUpon>Saldo por Antiguedad - CxP.cs</DependentUpon>
+    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxC.resx">
+      <DependentUpon>SaldoPorAntiguedadCxC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCXP.resx">
+      <DependentUpon>SaldoPorAntiguedadCXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxPDetallado.resx">
+      <DependentUpon>SaldoPorAntiguedadCxPDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxCDetallado.resx">
+      <DependentUpon>SaldoPorAntiguedadCxCDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\ObjetosImpresionesCxP.resx">
+      <DependentUpon>ObjetosImpresionesCxP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\ObjetosImpresionesCxC.resx">
+      <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
