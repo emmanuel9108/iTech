@@ -61,46 +61,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objetos Impresiones\Compras\gpDevolucionImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpDevolucionImpresion.Designer.cs">
+      <DependentUpon>gpDevolucionImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpEntrada.Designer.cs">
+      <DependentUpon>gpEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpFacturaCorporativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpFacturaCorporativa.Designer.cs">
+      <DependentUpon>gpFacturaCorporativa.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxC.cs">
+    <Compile Include="Objetos Impresiones\Compras\gpOrdenCorporativa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxC.Designer.cs">
+    <Compile Include="Objetos Impresiones\Compras\gpOrdenCorporativa.Designer.cs">
+      <DependentUpon>gpOrdenCorporativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpPagoImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Compras\gpPagoImpresion.Designer.cs">
+      <DependentUpon>gpPagoImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxC.Designer.cs">
       <DependentUpon>SaldoPorAntiguedadCxC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCXP.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCXP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCXP.Designer.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCXP.Designer.cs">
       <DependentUpon>SaldoPorAntiguedadCXP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxPDetallado.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxPDetallado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxPDetallado.Designer.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxPDetallado.Designer.cs">
       <DependentUpon>SaldoPorAntiguedadCxPDetallado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxCDetallado.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxCDetallado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\SaldoPorAntiguedadCxCDetallado.Designer.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxCDetallado.Designer.cs">
       <DependentUpon>SaldoPorAntiguedadCxCDetallado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\ObjetosImpresionesCxP.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\ObjetosImpresionesCxP.Designer.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxP.Designer.cs">
       <DependentUpon>ObjetosImpresionesCxP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finanzas\ObjetosImpresionesCxC.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Finanzas\ObjetosImpresionesCxC.Designer.cs">
+    <Compile Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxC.Designer.cs">
       <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
     </Compile>
     <Compile Include="splash.cs">
@@ -118,28 +148,43 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Temas.cs" />
+    <EmbeddedResource Include="Objetos Impresiones\Compras\gpDevolucionImpresion.resx">
+      <DependentUpon>gpDevolucionImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Compras\gpEntrada.resx">
+      <DependentUpon>gpEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Compras\gpFacturaCorporativa.resx">
+      <DependentUpon>gpFacturaCorporativa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxC.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Compras\gpOrdenCorporativa.resx">
+      <DependentUpon>gpOrdenCorporativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Compras\gpPagoImpresion.resx">
+      <DependentUpon>gpPagoImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxC.resx">
       <DependentUpon>SaldoPorAntiguedadCxC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCXP.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCXP.resx">
       <DependentUpon>SaldoPorAntiguedadCXP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxPDetallado.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxPDetallado.resx">
       <DependentUpon>SaldoPorAntiguedadCxPDetallado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\SaldoPorAntiguedadCxCDetallado.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\SaldoPorAntiguedadCxCDetallado.resx">
       <DependentUpon>SaldoPorAntiguedadCxCDetallado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\ObjetosImpresionesCxP.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxP.resx">
       <DependentUpon>ObjetosImpresionesCxP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Finanzas\ObjetosImpresionesCxC.resx">
+    <EmbeddedResource Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxC.resx">
       <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">

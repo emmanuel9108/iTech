@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
+using iTechERP.Objetos_Impresiones.Compras;
 
 namespace iTechERP
 {
@@ -144,6 +145,7 @@ namespace iTechERP
                 panelSeguridad.Width = 10;
                 panelSistema.Width = 10;
                 panelCompras.BringToFront();
+                
 
                 panelVentas.BackColor = Color.White;
                 panelCompras.BackColor = Color.FromArgb(51, 51, 76);
@@ -245,6 +247,7 @@ namespace iTechERP
                 panelSeguridad.Width = 10;
                 panelFinanzas.Width = 10;
                 panelSistema.Width = 10;
+                panelFecha.BringToFront();
 
                 panelCompras.BackColor = Color.White;
                 panelVentas.BackColor = Color.White;
@@ -371,6 +374,11 @@ namespace iTechERP
         private void btnCxC_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ObjetosImpresionesCxC(), sender);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new gpPagoImpresion(), sender);
         }
     }
 }

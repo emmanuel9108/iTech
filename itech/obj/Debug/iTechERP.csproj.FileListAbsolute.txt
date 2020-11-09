@@ -50,3 +50,8 @@ C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCxP
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.SaldoPorAntiguedadCxCDetallado.resources
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.ObjetosImpresionesCxP.resources
 C:\Users\johan\source\repos\iTech\itech\obj\Debug\iTechERP.ObjetosImpresionesCxC.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.gpFacturaCorporativa.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpOrdenCorporativa.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpEntrada.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpDevolucionImpresion.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpPagoImpresion.resources
