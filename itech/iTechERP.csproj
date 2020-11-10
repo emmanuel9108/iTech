@@ -61,6 +61,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras\devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\devoluciones.Designer.cs">
+      <DependentUpon>devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Entradas.Designer.cs">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\ordenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\ordenes.Designer.cs">
+      <DependentUpon>ordenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objetos Impresiones\Compras\gpDevolucionImpresion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +181,72 @@
     <Compile Include="Objetos Impresiones\Ventas\vdDocOrden.Designer.cs">
       <DependentUpon>vdDocOrden.cs</DependentUpon>
     </Compile>
+    <Compile Include="RRHH\departamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\departamentos.Designer.cs">
+      <DependentUpon>departamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\nominas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\nominas.Designer.cs">
+      <DependentUpon>nominas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Posiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Posiciones.Designer.cs">
+      <DependentUpon>Posiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\roles.Designer.cs">
+      <DependentUpon>roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ciudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ciudades.Designer.cs">
+      <DependentUpon>ciudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\paises.Designer.cs">
+      <DependentUpon>paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\provicias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\provicias.Designer.cs">
+      <DependentUpon>provicias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\sectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\sectores.Designer.cs">
+      <DependentUpon>sectores.cs</DependentUpon>
+    </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +262,30 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Temas.cs" />
+    <Compile Include="Ventas\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Igresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Igresos.Designer.cs">
+      <DependentUpon>Igresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ordenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ordenes.Designer.cs">
+      <DependentUpon>ordenes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Objetos Impresiones\Compras\gpDevolucionImpresion.resx">
       <DependentUpon>gpDevolucionImpresion.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,12 +373,6 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Compras\" />
-    <Folder Include="RRHH\" />
-    <Folder Include="Seguridad\" />
-    <Folder Include="Sistema\" />
-    <Folder Include="Ventas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
