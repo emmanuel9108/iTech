@@ -133,6 +133,30 @@
     <Compile Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxC.Designer.cs">
       <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Objetos Impresiones\RR.HH\Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\RR.HH\Nomina.Designer.cs">
+      <DependentUpon>Nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocFactura.Designer.cs">
+      <DependentUpon>vdDocFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocIngreso.Designer.cs">
+      <DependentUpon>vdDocIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetos Impresiones\Ventas\vdDocOrden.Designer.cs">
+      <DependentUpon>vdDocOrden.cs</DependentUpon>
+    </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +210,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Objetos Impresiones\Finanzas\ObjetosImpresionesCxC.resx">
       <DependentUpon>ObjetosImpresionesCxC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\RR.HH\Nomina.resx">
+      <DependentUpon>Nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Ventas\vdDocFactura.resx">
+      <DependentUpon>vdDocFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Ventas\vdDocIngreso.resx">
+      <DependentUpon>vdDocIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetos Impresiones\Ventas\vdDocOrden.resx">
+      <DependentUpon>vdDocOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>

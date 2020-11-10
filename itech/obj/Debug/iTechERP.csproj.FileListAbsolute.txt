@@ -55,3 +55,7 @@ C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.C
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpEntrada.resources
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpDevolucionImpresion.resources
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Compras.gpPagoImpresion.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Ventas.vdDocFactura.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Ventas.vdDocOrden.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.Ventas.vdDocIngreso.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Objetos_Impresiones.RR.HH.Nomina.resources

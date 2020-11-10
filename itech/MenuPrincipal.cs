@@ -13,6 +13,8 @@ using System.Diagnostics;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using iTechERP.Objetos_Impresiones.Compras;
+using iTechERP.Objetos_Impresiones.Ventas;
+using iTechERP.Objetos_Impresiones.RR.HH;
 
 namespace iTechERP
 {
@@ -378,7 +380,14 @@ namespace iTechERP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new gpPagoImpresion(), sender);
+            OpenChildForm(new Nomina(), sender);
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login lg = new Login();
+            lg.Show();
+            this.Hide();
         }
     }
 }
