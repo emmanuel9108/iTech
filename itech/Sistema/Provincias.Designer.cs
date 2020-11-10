@@ -1,6 +1,6 @@
-﻿namespace iTechERP.Compras
+﻿namespace iTechERP.Sistema
 {
-    partial class Facturas
+    partial class Provincias
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Facturas";
+            this.Text = "Provincias";
         }
 
         #endregion

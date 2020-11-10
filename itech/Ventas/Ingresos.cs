@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iTechERP.RRHH
+namespace iTechERP.Ventas
 {
-    public partial class Empleados : Form
+    public partial class Ingresos : Form
     {
-        public Empleados()
+        public Ingresos()
         {
             InitializeComponent();
         }

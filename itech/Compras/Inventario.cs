@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iTechERP.Ventas
+namespace iTechERP.Compras
 {
-    public partial class ordenes : Form
+    public partial class Inventario : Form
     {
-        public ordenes()
+        public Inventario()
         {
             InitializeComponent();
         }

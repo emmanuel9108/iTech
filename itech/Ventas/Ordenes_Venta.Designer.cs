@@ -1,6 +1,6 @@
-﻿namespace iTechERP.RRHH
+﻿namespace iTechERP.Ventas
 {
-    partial class Empleados
+    partial class Ordenes_Venta
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Empleados";
+            this.Text = "Ordenes_Venta";
         }
 
         #endregion

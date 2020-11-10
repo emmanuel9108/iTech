@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Ventas
 {
-    public partial class Igresos : Form
+    public partial class Facturas_Venta : Form
     {
-        public Igresos()
+        public Facturas_Venta()
         {
             InitializeComponent();
         }

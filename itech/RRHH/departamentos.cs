@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.RRHH
 {
-    public partial class departamentos : Form
+    public partial class Departamentos : Form
     {
-        public departamentos()
+        public Departamentos()
         {
             InitializeComponent();
         }

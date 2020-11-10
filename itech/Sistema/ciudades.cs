@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Sistema
 {
-    public partial class ciudades : Form
+    public partial class Ciudades : Form
     {
-        public ciudades()
+        public Ciudades()
         {
             InitializeComponent();
         }

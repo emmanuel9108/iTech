@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Sistema
 {
-    public partial class productos : Form
+    public partial class Productos : Form
     {
-        public productos()
+        public Productos()
         {
             InitializeComponent();
         }

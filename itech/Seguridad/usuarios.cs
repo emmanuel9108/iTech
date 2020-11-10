@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Seguridad
 {
-    public partial class usuarios : Form
+    public partial class Usuarios : Form
     {
-        public usuarios()
+        public Usuarios()
         {
             InitializeComponent();
         }

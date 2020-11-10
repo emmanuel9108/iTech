@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Compras
 {
-    public partial class devoluciones : Form
+    public partial class Proveedores : Form
     {
-        public devoluciones()
+        public Proveedores()
         {
             InitializeComponent();
         }

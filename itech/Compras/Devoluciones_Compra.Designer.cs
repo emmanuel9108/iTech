@@ -1,6 +1,6 @@
-﻿namespace iTechERP.Ventas
+﻿namespace iTechERP.Compras
 {
-    partial class Igresos
+    partial class Devoluciones_Compra
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Igresos";
+            this.Text = "Devoluciones_Compra";
         }
 
         #endregion

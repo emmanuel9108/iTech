@@ -1,6 +1,6 @@
 ﻿namespace iTechERP.RRHH
 {
-    partial class departamentos
+    partial class Departamentos
     {
         /// <summary>
         /// Required designer variable.
