@@ -259,5 +259,12 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Compras\" />
+    <Folder Include="RRHH\" />
+    <Folder Include="Seguridad\" />
+    <Folder Include="Sistema\" />
+    <Folder Include="Ventas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
