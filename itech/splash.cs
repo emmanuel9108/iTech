@@ -32,5 +32,10 @@ namespace iTechERP
                 lg.Show();
             }
         }
+
+        private void splash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

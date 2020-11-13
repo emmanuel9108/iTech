@@ -16,5 +16,10 @@ namespace iTechERP.Compras
         {
             InitializeComponent();
         }
+
+        private void Facturas_Compra_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

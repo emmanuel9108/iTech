@@ -380,7 +380,7 @@ namespace iTechERP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Nomina(), sender);
+            OpenChildForm(new gpFacturaCorporativa(), sender);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -388,6 +388,11 @@ namespace iTechERP
             Login lg = new Login();
             lg.Show();
             this.Hide();
+        }
+
+        private void btnFacturasCompra_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Facturas_Compra(), sender);
         }
     }
 }

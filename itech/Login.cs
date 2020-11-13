@@ -74,5 +74,23 @@ namespace iTechERP
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if(txtUser.Text == "Admin" && txtPass.Text == "iTech")
+            {
+                this.Hide();
+                MenuPrincipal MP = new MenuPrincipal();
+                MP.Show();
+        
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtPass.Clear();
+                txtUser.Clear();
+                txtUser.Focus();
+            }
+        }
     }
 }
