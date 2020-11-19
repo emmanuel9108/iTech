@@ -44,6 +44,9 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.15.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -304,8 +307,8 @@
     <Compile Include="Ventas\Ordenes_Venta.Designer.cs">
       <DependentUpon>Ordenes_Venta.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Compras\Devoluciones_Compra.resx">
-      <DependentUpon>Devoluciones_Compra.cs</DependentUpon>
+    <EmbeddedResource Include="Compras\Facturas_Compra.resx">
+      <DependentUpon>Facturas_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Objetos Impresiones\Compras\gpDevolucionImpresion.resx">
       <DependentUpon>gpDevolucionImpresion.cs</DependentUpon>

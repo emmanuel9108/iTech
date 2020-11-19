@@ -102,4 +102,5 @@ C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.cspro
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.csproj.CopyComplete
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.exe
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.pdb
-C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra.resources
+C:\Users\johan\Source\Repos\iTech\itech\bin\Debug\MaterialSkin.dll
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Facturas_Compra.resources

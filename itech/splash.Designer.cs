@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(splash));
             this.CircleProgressBar = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CircleProgressBar
@@ -46,13 +48,13 @@
             this.CircleProgressBar.LabelVisible = true;
             this.CircleProgressBar.LineProgressThickness = 8;
             this.CircleProgressBar.LineThickness = 5;
-            this.CircleProgressBar.Location = new System.Drawing.Point(227, 420);
-            this.CircleProgressBar.Margin = new System.Windows.Forms.Padding(5);
+            this.CircleProgressBar.Location = new System.Drawing.Point(339, 152);
+            this.CircleProgressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CircleProgressBar.MaxValue = 100;
             this.CircleProgressBar.Name = "CircleProgressBar";
             this.CircleProgressBar.ProgressBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(121)))), ((int)(((byte)(135)))));
             this.CircleProgressBar.ProgressColor = System.Drawing.Color.Chartreuse;
-            this.CircleProgressBar.Size = new System.Drawing.Size(162, 162);
+            this.CircleProgressBar.Size = new System.Drawing.Size(132, 132);
             this.CircleProgressBar.TabIndex = 0;
             this.CircleProgressBar.Value = 0;
             // 
@@ -60,21 +62,36 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(195, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(420, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // splash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::iTechERP.Properties.Resources.ite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 625);
+            this.ClientSize = new System.Drawing.Size(811, 299);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CircleProgressBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.splash_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,6 +100,7 @@
 
         private Bunifu.Framework.UI.BunifuCircleProgressbar CircleProgressBar;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

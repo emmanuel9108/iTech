@@ -380,7 +380,7 @@ namespace iTechERP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Nomina(), sender);
+            OpenChildForm(new gpFacturaCorporativa(), sender);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -390,51 +390,9 @@ namespace iTechERP
             this.Hide();
         }
 
-        private void btnOrdenesCompras_Click(object sender, EventArgs e)
-        {
-            Compras.Devoluciones_Compra dv = new Compras.Devoluciones_Compra();
-            dv.Show();
-            ///
-           // MenuPrincipal mn = new MenuPrincipal();
-            //mn.Hide();
-        }
-
         private void btnFacturasCompra_Click(object sender, EventArgs e)
         {
-            Compras.Facturas_Compra ftcom = new Compras.Facturas_Compra();
-            ftcom.Show();
-        }
-
-        private void btnEntradaMercancia_Click(object sender, EventArgs e)
-        {
-
-            Compras.Entradas ent = new Compras.Entradas();
-            ent.Show();
-        }
-
-        private void btnDevoluciones_Click(object sender, EventArgs e)
-        {
-            
-            Compras.Devoluciones_Compra dv = new Compras.Devoluciones_Compra();
-            dv.Show();
-        }
-
-        private void btnInventario_Click(object sender, EventArgs e)
-        {
-            Compras.Inventario inv = new Compras.Inventario();
-            inv.Show();
-        }
-
-        private void btnPagos_Click(object sender, EventArgs e)
-        {
-            Compras.Pagos pog = new Compras.Pagos();
-            pog.Show();
-        }
-
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-            Compras.Proveedores prov = new Compras.Proveedores();
-            prov.Show();
+            OpenChildForm(new Compras.Facturas_Compra(), sender);
         }
     }
 }
