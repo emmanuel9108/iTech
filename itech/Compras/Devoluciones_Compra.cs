@@ -16,5 +16,10 @@ namespace iTechERP.Compras
         {
             InitializeComponent();
         }
+
+        private void Devoluciones_Compra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

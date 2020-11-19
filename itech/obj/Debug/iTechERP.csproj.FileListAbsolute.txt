@@ -102,3 +102,4 @@ C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.cspro
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.csproj.CopyComplete
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.exe
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.pdb
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra.resources
