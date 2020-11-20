@@ -307,6 +307,9 @@
     <Compile Include="Ventas\Ordenes_Venta.Designer.cs">
       <DependentUpon>Ordenes_Venta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compras\Devoluciones_Compra.resx">
+      <DependentUpon>Devoluciones_Compra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compras\Facturas_Compra.resx">
       <DependentUpon>Facturas_Compra.cs</DependentUpon>
     </EmbeddedResource>

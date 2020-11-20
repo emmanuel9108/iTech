@@ -394,5 +394,17 @@ namespace iTechERP
         {
             OpenChildForm(new Compras.Facturas_Compra(), sender);
         }
+
+        private void btnOrdenesCompras_Click(object sender, EventArgs e)
+        {
+            //Compras.Devoluciones_Compra dv = new Compras.Devoluciones_Compra();
+            //  dv.Show();
+            OpenChildForm(new Compras.Devoluciones_Compra(), sender);
+        }
+
+        private void panelCompras_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
