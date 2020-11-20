@@ -107,3 +107,5 @@ C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Facturas_Comp
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\bin\Debug\MaterialSkin.dll
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Facturas_Compra.resources
 C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra.resources
+C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra_Consulta.resources

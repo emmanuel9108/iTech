@@ -62,7 +62,7 @@ namespace iTechERP
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    panelTitulo.BackColor = color;
+                  //  panelTitulo.BackColor = color;
                     panelLogo.BackColor = Temas.ChangeColorBrightness(color, -0.3);
                     Temas.PrimaryColor = color;
                     Temas.SecondaryColor = Temas.ChangeColorBrightness(color, 0.3);
@@ -124,7 +124,7 @@ namespace iTechERP
         {
             DisableButton();
             lblTitulo.Text = "HOME";
-            panelTitulo.BackColor = Color.FromArgb(0, 150, 136);
+            panelTitulo.BackColor = Color.FromArgb(89, 136, 255);
             panelLogo.BackColor = Color.FromArgb(39, 39, 39);
             currentButton = null;
             btnCerrarFormHijo.Visible = false;
@@ -397,14 +397,17 @@ namespace iTechERP
 
         private void btnOrdenesCompras_Click(object sender, EventArgs e)
         {
-            //Compras.Devoluciones_Compra dv = new Compras.Devoluciones_Compra();
-            //  dv.Show();
-            OpenChildForm(new Compras.Devoluciones_Compra(), sender);
+            
         }
 
         private void panelCompras_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnDevoluciones_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Devoluciones_Compra_Consulta(), sender);
         }
     }
 }
