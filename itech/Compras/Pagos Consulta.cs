@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Compras
 {
-    public partial class Devoluciones_Compra_Consulta : Form
+    public partial class Pagos_Consulta : Form
     {
-        public Devoluciones_Compra_Consulta()
+        public Pagos_Consulta()
         {
             InitializeComponent();
         }
@@ -29,23 +29,18 @@ namespace iTechERP.Compras
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Devoluciones_Compra devoluciones_Compra = new Devoluciones_Compra();
+            Pagos devoluciones_Compra = new Pagos();
             this.Close();
             devoluciones_Compra.Show();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpDevolucionImpresion gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpDevolucionImpresion();
+            Objetos_Impresiones.Compras.gpPagoImpresion gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpPagoImpresion();
             gpDevolucionImpresion.Show();
         }
 
-        private void richTextBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void richTextBox1_MouseEnter(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -59,12 +54,12 @@ namespace iTechERP.Compras
             }
         }
 
-        private void richTextBox1_MouseLeave(object sender, EventArgs e)
+        private void richTextBox1_Leave(object sender, EventArgs e)
         {
             if (richTextBox1.Text == "")
             {
                 richTextBox1.Text = "Proveedor";
-                richTextBox1.ForeColor = Color.DarkGray;                
+                richTextBox1.ForeColor = Color.DarkGray;
             }
         }
     }

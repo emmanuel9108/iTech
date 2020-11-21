@@ -97,7 +97,7 @@ namespace iTechERP
             this.panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitulo.Text = childForm.Text;
+           // lblTitulo.Text = childForm.Text;
         }
 
 
@@ -117,13 +117,14 @@ namespace iTechERP
                 panelSeguridad.BackColor = Color.White;
                 panelSistema.BackColor = Color.White;
                 panelFinanzas.BackColor = Color.White;
+            panelFecha.BringToFront();
             Reset();
         }
 
         public void Reset()
         {
             DisableButton();
-            lblTitulo.Text = "HOME";
+            lblTitulo.Text = "iTech ERP";
             panelTitulo.BackColor = Color.FromArgb(89, 136, 255);
             panelLogo.BackColor = Color.FromArgb(39, 39, 39);
             currentButton = null;
@@ -264,7 +265,11 @@ namespace iTechERP
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Esta Seguro que desea salir?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
@@ -293,6 +298,20 @@ namespace iTechERP
             }
             else
             {
+                btnOrdenesCompras.BackColor = Color.FromArgb(255, 252, 245);
+                btnOrdenesCompras.ForeColor = Color.Black;
+                btnPagos.BackColor = Color.FromArgb(255, 252, 245);
+                btnPagos.ForeColor = Color.Black;
+                btnProveedores.BackColor = Color.FromArgb(255, 252, 245);
+                btnProveedores.ForeColor = Color.Black;
+                btnEntradaMercancia.BackColor = Color.FromArgb(255, 252, 245);
+                btnEntradaMercancia.ForeColor = Color.Black;
+                btnDevoluciones.BackColor = Color.FromArgb(255, 252, 245);
+                btnDevoluciones.ForeColor = Color.Black;
+                btnInventario.BackColor = Color.FromArgb(255, 252, 245);
+                btnInventario.ForeColor = Color.Black;
+                btnFacturasCompra.BackColor = Color.FromArgb(255, 252, 245);
+                btnFacturasCompra.ForeColor = Color.Black;
                 ResetPanels("Compras");
                 ActivateButton(sender);
             }
@@ -306,6 +325,14 @@ namespace iTechERP
             }
             else
             {
+                btnFacturasVenta.BackColor = Color.FromArgb(255, 252, 245);
+                btnFacturasVenta.ForeColor = Color.Black;
+                btnClientes.BackColor = Color.FromArgb(255, 252, 245);
+                btnClientes.ForeColor = Color.Black;
+                btnIngresos.BackColor = Color.FromArgb(255, 252, 245);
+                btnIngresos.ForeColor = Color.Black;
+                btnOrdenesVenta.BackColor = Color.FromArgb(255, 252, 245);
+                btnOrdenesVenta.ForeColor = Color.Black;
                 ResetPanels("Ventas");
                 ActivateButton(sender);
             }
@@ -319,6 +346,8 @@ namespace iTechERP
             }
             else
             {
+                btnProductos.BackColor = Color.FromArgb(255, 252, 245);
+                btnProductos.ForeColor = Color.Black;
                 ResetPanels("Sistema");
                 ActivateButton(sender);
             }
@@ -332,6 +361,10 @@ namespace iTechERP
             }
             else
             {
+                btnUsuarios.BackColor = Color.FromArgb(255, 252, 245);
+                btnUsuarios.ForeColor = Color.Black;
+                btnRolesUsuarios.BackColor = Color.FromArgb(255, 252, 245);
+                btnRolesUsuarios.ForeColor = Color.Black;
                 ResetPanels("Seguridad");
                 ActivateButton(sender);
             }
@@ -345,6 +378,14 @@ namespace iTechERP
             }
             else
             {
+                btnDepartamentos.BackColor = Color.FromArgb(255, 252, 245);
+                btnDepartamentos.ForeColor = Color.Black;
+                btnPosiciones.BackColor = Color.FromArgb(255, 252, 245);
+                btnPosiciones.ForeColor = Color.Black;
+                btnEmpleados.BackColor = Color.FromArgb(255, 252, 245);
+                btnEmpleados.ForeColor = Color.Black;
+                btnNominas.BackColor = Color.FromArgb(255, 252, 245);
+                btnNominas.ForeColor = Color.Black;
                 ResetPanels("Recursos Humanos");
                 ActivateButton(sender);
             }
@@ -364,6 +405,10 @@ namespace iTechERP
             }
             else
             {
+                btnCxC.BackColor = Color.FromArgb(255, 252, 245);
+                btnCxC.ForeColor = Color.Black;
+                btnCxP.BackColor = Color.FromArgb(255, 252, 245);
+                btnCxP.ForeColor = Color.Black;
                 ResetPanels("Finanzas");
                 ActivateButton(sender);
             }
@@ -397,7 +442,7 @@ namespace iTechERP
 
         private void btnOrdenesCompras_Click(object sender, EventArgs e)
         {
-            
+            OpenChildForm(new Compras.Ordenes_Compra_Consulta(), sender);
         }
 
         private void panelCompras_Paint(object sender, PaintEventArgs e)
@@ -408,6 +453,21 @@ namespace iTechERP
         private void btnDevoluciones_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Compras.Devoluciones_Compra_Consulta(), sender);
+        }
+
+        private void btnPagos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Pagos_Consulta(), sender);
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Proveedores(), sender);
+        }
+
+        private void btnEntradaMercancia_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Entradas_Consulta(), sender);
         }
     }
 }

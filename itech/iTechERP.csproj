@@ -64,6 +64,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras\Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Entradas.Designer.cs">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Entradas Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Entradas Consulta.Designer.cs">
+      <DependentUpon>Entradas Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Pagos Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Pagos Consulta.Designer.cs">
+      <DependentUpon>Pagos Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Ordenes_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Ordenes_Compra.Designer.cs">
+      <DependentUpon>Ordenes_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Ordenes_Compra Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Ordenes_Compra Consulta.Designer.cs">
+      <DependentUpon>Ordenes_Compra Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compras\Devoluciones_Compra Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +118,6 @@
     <Compile Include="Compras\Devoluciones_Compra.Designer.cs">
       <DependentUpon>Devoluciones_Compra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Compras\Entradas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Entradas.Designer.cs">
-      <DependentUpon>Entradas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Compras\Facturas_Compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,24 +129,6 @@
     </Compile>
     <Compile Include="Compras\Inventario.Designer.cs">
       <DependentUpon>Inventario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Compras\Ordenes_Compra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Ordenes_Compra.Designer.cs">
-      <DependentUpon>Ordenes_Compra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Compras\Pagos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Pagos.Designer.cs">
-      <DependentUpon>Pagos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Compras\Proveedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Proveedores.Designer.cs">
-      <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Objetos Impresiones\Compras\gpDevolucionImpresion.cs">
       <SubType>Form</SubType>
@@ -313,6 +331,27 @@
     <Compile Include="Ventas\Ordenes_Venta.Designer.cs">
       <DependentUpon>Ordenes_Venta.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Compras\Entradas.resx">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Entradas Consulta.resx">
+      <DependentUpon>Entradas Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Pagos Consulta.resx">
+      <DependentUpon>Pagos Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Ordenes_Compra.resx">
+      <DependentUpon>Ordenes_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Ordenes_Compra Consulta.resx">
+      <DependentUpon>Ordenes_Compra Consulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compras\Devoluciones_Compra Consulta.resx">
       <DependentUpon>Devoluciones_Compra Consulta.cs</DependentUpon>
     </EmbeddedResource>

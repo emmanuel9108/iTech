@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Compras
 {
-    public partial class Devoluciones_Compra_Consulta : Form
+    public partial class Entradas_Consulta : Form
     {
-        public Devoluciones_Compra_Consulta()
+        public Entradas_Consulta()
         {
             InitializeComponent();
         }
@@ -29,14 +29,14 @@ namespace iTechERP.Compras
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Devoluciones_Compra devoluciones_Compra = new Devoluciones_Compra();
+            Entradas devoluciones_Compra = new Entradas();
             this.Close();
             devoluciones_Compra.Show();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpDevolucionImpresion gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpDevolucionImpresion();
+            Objetos_Impresiones.Compras.gpEntrada gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpEntrada();
             gpDevolucionImpresion.Show();
         }
 
