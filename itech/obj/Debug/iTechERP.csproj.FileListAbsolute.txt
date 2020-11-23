@@ -116,3 +116,11 @@ C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Pagos.resourc
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Proveedores.resources
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Entradas.resources
 C:\Users\johan\Source\Repos\iTech\itech\obj\Debug\iTechERP.Compras.Entradas_Consulta.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Entradas.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Entradas_Consulta.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Proveedores.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Pagos_Consulta.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Pagos.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Ordenes_Compra.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Ordenes_Compra_Consulta.resources
+C:\Users\Emmanuel\source\repos\emmanuel9108\iTech\itech\obj\Debug\iTechERP.Compras.Devoluciones_Compra_Consulta.resources
