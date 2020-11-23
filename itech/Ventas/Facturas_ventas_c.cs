@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace iTechERP.Ventas
 {
-    public partial class Facturas_Ventas_consulta : Form
+    public partial class Facturas_ventas_c : Form
     {
-        public Facturas_Ventas_consulta()
+        public Facturas_ventas_c()
         {
             InitializeComponent();
         }
@@ -29,14 +29,14 @@ namespace iTechERP.Ventas
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Facturas_ventas factura_v = new  Facturas_ventas();
+            Facturas_ventas FFacturas_ventas = new Facturas_ventas();
             this.Close();
-            factura_v.Show();
+            FFacturas_ventas.Show();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpEntrada gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpEntrada();
+            Objetos_Impresiones.Compras.gpDevolucionImpresion gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpDevolucionImpresion();
             gpDevolucionImpresion.Show();
         }
 

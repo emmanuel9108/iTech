@@ -697,6 +697,7 @@
             this.btnClientes.TabIndex = 18;
             this.btnClientes.Text = "VD001 - Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnOrdenesVenta
             // 
@@ -711,6 +712,7 @@
             this.btnOrdenesVenta.TabIndex = 17;
             this.btnOrdenesVenta.Text = "VD002 - Ordenes Venta";
             this.btnOrdenesVenta.UseVisualStyleBackColor = false;
+            this.btnOrdenesVenta.Click += new System.EventHandler(this.btnOrdenesVenta_Click);
             // 
             // btnFacturasVenta
             // 
@@ -725,6 +727,7 @@
             this.btnFacturasVenta.TabIndex = 16;
             this.btnFacturasVenta.Text = "VD003 - Factura Venta";
             this.btnFacturasVenta.UseVisualStyleBackColor = false;
+            this.btnFacturasVenta.Click += new System.EventHandler(this.btnFacturasVenta_Click);
             // 
             // btnIngresos
             // 
@@ -739,6 +742,7 @@
             this.btnIngresos.TabIndex = 15;
             this.btnIngresos.Text = "VD004 - Ingresos";
             this.btnIngresos.UseVisualStyleBackColor = false;
+            this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
             // lblVentas
             // 
@@ -873,6 +877,7 @@
             this.btnInventario.TabIndex = 8;
             this.btnInventario.Text = "GP007 - Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // lblCompras
             // 

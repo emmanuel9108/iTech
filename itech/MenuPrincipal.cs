@@ -437,7 +437,7 @@ namespace iTechERP
 
         private void btnFacturasCompra_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Compras.Facturas_Compra(), sender);
+            OpenChildForm(new Compras.Facturas_Compra_consulta(), sender);
         }
 
         private void btnOrdenesCompras_Click(object sender, EventArgs e)
@@ -468,6 +468,31 @@ namespace iTechERP
         private void btnEntradaMercancia_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Compras.Entradas_Consulta(), sender);
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ventas.Cliente_consulta(), sender);
+        }
+
+        private void btnOrdenesVenta_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ventas.Ordenes_Venta_Consulta(), sender);
+        }
+
+        private void btnFacturasVenta_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ventas.Facturas_Ventas_consulta(), sender);
+        }
+
+        private void btnIngresos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Ventas.Ingresos_Consulta(), sender);
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Compras.Inventario_Consulta(), sender);
         }
     }
 }

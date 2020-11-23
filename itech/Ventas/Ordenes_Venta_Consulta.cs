@@ -29,7 +29,7 @@ namespace iTechERP.Ventas
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-           Ordenes_Venta Ordenes_Ventas = new Ordenes_Venta();
+           Ordenes_V Ordenes_Ventas = new Ordenes_V();
             this.Close();
             Ordenes_Ventas.Show();
         }

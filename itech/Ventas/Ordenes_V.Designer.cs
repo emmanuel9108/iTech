@@ -1,6 +1,6 @@
 ﻿namespace iTechERP.Ventas
 {
-    partial class Facturas_ventas
+    partial class Ordenes_V
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ordenes_V));
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -632,12 +633,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ubuntu", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1382, 77);
+            this.label3.Location = new System.Drawing.Point(1285, 72);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(658, 76);
+            this.label3.Size = new System.Drawing.Size(804, 76);
             this.label3.TabIndex = 50;
-            this.label3.Text = "VD003- Factura Venta";
+            this.label3.Text = "VD002 - Ordenes de ventas";
             // 
             // textBox10
             // 
@@ -725,7 +726,7 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // Facturas_ventas
+            // Ordenes_V
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -735,9 +736,10 @@
             this.Controls.Add(this.panel_detalle);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Facturas_ventas";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Ordenes_V";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Facturas Ventas";
+            this.Text = "Ordenes de Ventas";
             this.Load += new System.EventHandler(this.Devoluciones_Compra_Load);
             this.panel_detalle.ResumeLayout(false);
             this.panel_detalle.PerformLayout();

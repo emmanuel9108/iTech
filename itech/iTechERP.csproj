@@ -76,6 +76,18 @@
     <Compile Include="Compras\Entradas Consulta.Designer.cs">
       <DependentUpon>Entradas Consulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Compras\Facturas_Compra_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Facturas_Compra_consulta.Designer.cs">
+      <DependentUpon>Facturas_Compra_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Inventario_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Inventario_Consulta.Designer.cs">
+      <DependentUpon>Inventario_Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compras\Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +135,6 @@
     </Compile>
     <Compile Include="Compras\Facturas_Compra.Designer.cs">
       <DependentUpon>Facturas_Compra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Compras\Inventario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
     <Compile Include="Objetos Impresiones\Compras\gpDevolucionImpresion.cs">
       <SubType>Form</SubType>
@@ -307,17 +313,47 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Temas.cs" />
-    <Compile Include="Ventas\Clientes.cs">
+    <Compile Include="Ventas\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <Compile Include="Ventas\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Facturas_Venta.cs">
+    <Compile Include="Ventas\Cliente_consulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\Facturas_Venta.Designer.cs">
-      <DependentUpon>Facturas_Venta.cs</DependentUpon>
+    <Compile Include="Ventas\Cliente_consulta.Designer.cs">
+      <DependentUpon>Cliente_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Facturas_ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Facturas_Ventas.Designer.cs">
+      <DependentUpon>Facturas_ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Facturas_Ventas_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Facturas_Ventas_consulta.Designer.cs">
+      <DependentUpon>Facturas_Ventas_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ingresos_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ingresos_Consulta.Designer.cs">
+      <DependentUpon>Ingresos_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_V.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_V.Designer.cs">
+      <DependentUpon>Ordenes_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_Venta_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_Venta_Consulta.Designer.cs">
+      <DependentUpon>Ordenes_Venta_Consulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventas\Ingresos.cs">
       <SubType>Form</SubType>
@@ -325,17 +361,17 @@
     <Compile Include="Ventas\Ingresos.Designer.cs">
       <DependentUpon>Ingresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Ordenes_Venta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventas\Ordenes_Venta.Designer.cs">
-      <DependentUpon>Ordenes_Venta.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Compras\Entradas.resx">
       <DependentUpon>Entradas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Entradas Consulta.resx">
       <DependentUpon>Entradas Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Facturas_Compra_consulta.resx">
+      <DependentUpon>Facturas_Compra_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Inventario_Consulta.resx">
+      <DependentUpon>Inventario_Consulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>
@@ -425,6 +461,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Ventas\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Cliente_consulta.resx">
+      <DependentUpon>Cliente_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Facturas_ventas.resx">
+      <DependentUpon>Facturas_ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Facturas_Ventas_consulta.resx">
+      <DependentUpon>Facturas_Ventas_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ingresos_Consulta.resx">
+      <DependentUpon>Ingresos_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ordenes_V.resx">
+      <DependentUpon>Ordenes_V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ordenes_Venta_Consulta.resx">
+      <DependentUpon>Ordenes_Venta_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ingresos.resx">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
