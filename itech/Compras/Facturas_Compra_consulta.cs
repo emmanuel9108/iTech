@@ -36,7 +36,7 @@ namespace iTechERP.Compras
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpEntrada gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpEntrada();
+            gpFacturaCorporativa gpDevolucionImpresion = new gpFacturaCorporativa();
             gpDevolucionImpresion.Show();
         }
 

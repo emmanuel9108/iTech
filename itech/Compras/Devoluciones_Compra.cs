@@ -19,7 +19,7 @@ namespace iTechERP.Compras
 
         private void Devoluciones_Compra_Load(object sender, EventArgs e)
         {
-
+            textBox1.Focus();
         }
 
         private void richTextBox4_TextChanged(object sender, EventArgs e)

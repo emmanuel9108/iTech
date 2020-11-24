@@ -61,7 +61,7 @@ namespace iTechERP
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Ubuntu", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                   //  panelTitulo.BackColor = color;
                     panelLogo.BackColor = Temas.ChangeColorBrightness(color, -0.3);
                     Temas.PrimaryColor = color;
@@ -79,7 +79,7 @@ namespace iTechERP
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Ubuntu", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Ubuntu", 9.74F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -265,7 +265,7 @@ namespace iTechERP
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta Seguro que desea salir?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show("Está seguro que desea salir?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -348,6 +348,14 @@ namespace iTechERP
             {
                 btnProductos.BackColor = Color.FromArgb(255, 252, 245);
                 btnProductos.ForeColor = Color.Black;
+                btnPaises.BackColor = Color.FromArgb(255, 252, 245);
+                btnPaises.ForeColor = Color.Black;
+                btnProvincias.BackColor = Color.FromArgb(255, 252, 245);
+                btnProvincias.ForeColor = Color.Black;
+                btnCiudades.BackColor = Color.FromArgb(255, 252, 245);
+                btnCiudades.ForeColor = Color.Black;
+                btnSectores.BackColor = Color.FromArgb(255, 252, 245);
+                btnSectores.ForeColor = Color.Black;
                 ResetPanels("Sistema");
                 ActivateButton(sender);
             }
@@ -365,6 +373,8 @@ namespace iTechERP
                 btnUsuarios.ForeColor = Color.Black;
                 btnRolesUsuarios.BackColor = Color.FromArgb(255, 252, 245);
                 btnRolesUsuarios.ForeColor = Color.Black;
+                btnRolesAccesos.BackColor = Color.FromArgb(255, 252, 245);
+                btnRolesAccesos.ForeColor = Color.Black;
                 ResetPanels("Seguridad");
                 ActivateButton(sender);
             }
@@ -409,6 +419,8 @@ namespace iTechERP
                 btnCxC.ForeColor = Color.Black;
                 btnCxP.BackColor = Color.FromArgb(255, 252, 245);
                 btnCxP.ForeColor = Color.Black;
+                btnMonedas.BackColor = Color.FromArgb(255, 252, 245);
+                btnMonedas.ForeColor = Color.Black;
                 ResetPanels("Finanzas");
                 ActivateButton(sender);
             }
@@ -462,7 +474,7 @@ namespace iTechERP
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Compras.Proveedores(), sender);
+            OpenChildForm(new Compras.Proveedores_consulta(), sender);
         }
 
         private void btnEntradaMercancia_Click(object sender, EventArgs e)
@@ -493,6 +505,71 @@ namespace iTechERP
         private void btnInventario_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Compras.Inventario_Consulta(), sender);
+        }
+
+        private void btnDepartamentos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RRHH.Departamentos_Consulta(), sender);
+        }
+
+        private void btnPosiciones_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RRHH.Posiciones_Consulta(), sender);
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RRHH.Empleados_Consulta(), sender);
+        }
+
+        private void btnNominas_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RRHH.Nominas_Consulta(), sender);
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Productos_Consulta(), sender);
+        }
+
+        private void btnPaises_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Paises_Consulta(), sender);
+        }
+
+        private void btnProvincias_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Provincias_Consulta(), sender);
+        }
+
+        private void btnCiudades_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Ciudades_Consulta(), sender);
+        }
+
+        private void btnSectores_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Sectores_Consulta(), sender);
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Seguridad.Usuarios_Consulta(), sender);
+        }
+
+        private void btnRolesUsuarios_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Seguridad.Roles_Consulta(), sender);
+        }
+
+        private void btnRolesAccesos_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Seguridad.RolesAccesos_Consulta(), sender);
+        }
+
+        private void btnMonedas_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Finanzas.Monedas_Consulta(), sender);
         }
     }
 }

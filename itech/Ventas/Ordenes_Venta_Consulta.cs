@@ -36,13 +36,13 @@ namespace iTechERP.Ventas
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpOrdenCorporativa gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpOrdenCorporativa();
+            Objetos_Impresiones.Ventas.vdDocOrden gpDevolucionImpresion = new Objetos_Impresiones.Ventas.vdDocOrden();
             gpDevolucionImpresion.Show();
         }
 
         private void richTextBox1_Enter(object sender, EventArgs e)
         {
-            if (richTextBox1.Text == "Proveedor")
+            if (richTextBox1.Text == "Cliente")
             {
                 richTextBox1.Text = "";
                 richTextBox1.ForeColor = Color.White;
@@ -53,7 +53,7 @@ namespace iTechERP.Ventas
         {
             if (richTextBox1.Text == "")
             {
-                richTextBox1.Text = "Proveedor";
+                richTextBox1.Text = "Cliente";
                 richTextBox1.ForeColor = Color.DarkGray;
             }
         }

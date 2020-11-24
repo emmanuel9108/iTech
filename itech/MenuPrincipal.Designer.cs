@@ -31,19 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnLogOut = new FontAwesome.Sharp.IconButton();
-            this.btnSistema = new FontAwesome.Sharp.IconButton();
-            this.btnSeguridad = new FontAwesome.Sharp.IconButton();
-            this.btnFinanzas = new FontAwesome.Sharp.IconButton();
-            this.btnRecursosHumanos = new FontAwesome.Sharp.IconButton();
-            this.btnVentas = new FontAwesome.Sharp.IconButton();
-            this.btnCompras = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelTitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new FontAwesome.Sharp.IconButton();
-            this.btnMinimizar = new FontAwesome.Sharp.IconButton();
-            this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btnCerrarFormHijo = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelFecha = new System.Windows.Forms.Panel();
@@ -81,8 +70,29 @@
             this.btnPagos = new System.Windows.Forms.Button();
             this.btnInventario = new System.Windows.Forms.Button();
             this.lblCompras = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerFechaHoraActual = new System.Windows.Forms.Timer(this.components);
+            this.btnPaises = new System.Windows.Forms.Button();
+            this.btnProvincias = new System.Windows.Forms.Button();
+            this.btnCiudades = new System.Windows.Forms.Button();
+            this.btnSectores = new System.Windows.Forms.Button();
+            this.btnRolesAccesos = new System.Windows.Forms.Button();
+            this.btnMonedas = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRestaurar = new FontAwesome.Sharp.IconButton();
+            this.btnMinimizar = new FontAwesome.Sharp.IconButton();
+            this.btnCerrar = new FontAwesome.Sharp.IconButton();
+            this.btnCerrarFormHijo = new System.Windows.Forms.Button();
+            this.btnLogOut = new FontAwesome.Sharp.IconButton();
+            this.btnSistema = new FontAwesome.Sharp.IconButton();
+            this.btnSeguridad = new FontAwesome.Sharp.IconButton();
+            this.btnFinanzas = new FontAwesome.Sharp.IconButton();
+            this.btnRecursosHumanos = new FontAwesome.Sharp.IconButton();
+            this.btnVentas = new FontAwesome.Sharp.IconButton();
+            this.btnCompras = new FontAwesome.Sharp.IconButton();
+            this.panelUser = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelTitulo.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -94,11 +104,14 @@
             this.panelVentas.SuspendLayout();
             this.panelCompras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.panelUser);
             this.panelMenu.Controls.Add(this.btnLogOut);
             this.panelMenu.Controls.Add(this.btnSistema);
             this.panelMenu.Controls.Add(this.btnSeguridad);
@@ -109,184 +122,10 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(309, 880);
+            this.panelMenu.Size = new System.Drawing.Size(206, 685);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.btnLogOut.IconColor = System.Drawing.Color.White;
-            this.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogOut.IconSize = 32;
-            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 805);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnLogOut.Rotation = 0D;
-            this.btnLogOut.Size = new System.Drawing.Size(309, 75);
-            this.btnLogOut.TabIndex = 7;
-            this.btnLogOut.Text = "   Cerrar Sección";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // btnSistema
-            // 
-            this.btnSistema.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSistema.FlatAppearance.BorderSize = 0;
-            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSistema.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSistema.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.btnSistema.IconColor = System.Drawing.Color.White;
-            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSistema.IconSize = 32;
-            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.Location = new System.Drawing.Point(0, 500);
-            this.btnSistema.Name = "btnSistema";
-            this.btnSistema.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnSistema.Rotation = 0D;
-            this.btnSistema.Size = new System.Drawing.Size(309, 75);
-            this.btnSistema.TabIndex = 6;
-            this.btnSistema.Text = "   Sistema";
-            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSistema.UseVisualStyleBackColor = true;
-            this.btnSistema.Click += new System.EventHandler(this.btnSistema_Click);
-            // 
-            // btnSeguridad
-            // 
-            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSeguridad.FlatAppearance.BorderSize = 0;
-            this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeguridad.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnSeguridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeguridad.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSeguridad.IconChar = FontAwesome.Sharp.IconChar.ShieldAlt;
-            this.btnSeguridad.IconColor = System.Drawing.Color.White;
-            this.btnSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSeguridad.IconSize = 32;
-            this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 425);
-            this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnSeguridad.Rotation = 0D;
-            this.btnSeguridad.Size = new System.Drawing.Size(309, 75);
-            this.btnSeguridad.TabIndex = 5;
-            this.btnSeguridad.Text = "   Seguridad";
-            this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSeguridad.UseVisualStyleBackColor = true;
-            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
-            // 
-            // btnFinanzas
-            // 
-            this.btnFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFinanzas.FlatAppearance.BorderSize = 0;
-            this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanzas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnFinanzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinanzas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFinanzas.IconChar = FontAwesome.Sharp.IconChar.Landmark;
-            this.btnFinanzas.IconColor = System.Drawing.Color.White;
-            this.btnFinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFinanzas.IconSize = 32;
-            this.btnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanzas.Location = new System.Drawing.Point(0, 350);
-            this.btnFinanzas.Name = "btnFinanzas";
-            this.btnFinanzas.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnFinanzas.Rotation = 0D;
-            this.btnFinanzas.Size = new System.Drawing.Size(309, 75);
-            this.btnFinanzas.TabIndex = 4;
-            this.btnFinanzas.Text = "   Finanzas";
-            this.btnFinanzas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFinanzas.UseVisualStyleBackColor = true;
-            this.btnFinanzas.Click += new System.EventHandler(this.btnFinanzas_Click);
-            // 
-            // btnRecursosHumanos
-            // 
-            this.btnRecursosHumanos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRecursosHumanos.FlatAppearance.BorderSize = 0;
-            this.btnRecursosHumanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecursosHumanos.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnRecursosHumanos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecursosHumanos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnRecursosHumanos.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.btnRecursosHumanos.IconColor = System.Drawing.Color.White;
-            this.btnRecursosHumanos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRecursosHumanos.IconSize = 32;
-            this.btnRecursosHumanos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecursosHumanos.Location = new System.Drawing.Point(0, 275);
-            this.btnRecursosHumanos.Name = "btnRecursosHumanos";
-            this.btnRecursosHumanos.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnRecursosHumanos.Rotation = 0D;
-            this.btnRecursosHumanos.Size = new System.Drawing.Size(309, 75);
-            this.btnRecursosHumanos.TabIndex = 3;
-            this.btnRecursosHumanos.Text = "   Recursos Humanos";
-            this.btnRecursosHumanos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecursosHumanos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRecursosHumanos.UseVisualStyleBackColor = true;
-            this.btnRecursosHumanos.Click += new System.EventHandler(this.btnRecursosHumanos_Click);
-            // 
-            // btnVentas
-            // 
-            this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVentas.FlatAppearance.BorderSize = 0;
-            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.Tags;
-            this.btnVentas.IconColor = System.Drawing.Color.White;
-            this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVentas.IconSize = 32;
-            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(0, 200);
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnVentas.Rotation = 0D;
-            this.btnVentas.Size = new System.Drawing.Size(309, 75);
-            this.btnVentas.TabIndex = 2;
-            this.btnVentas.Text = "   Ventas";
-            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVentas.UseVisualStyleBackColor = true;
-            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
-            // 
-            // btnCompras
-            // 
-            this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCompras.FlatAppearance.BorderSize = 0;
-            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompras.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.StoreAlt;
-            this.btnCompras.IconColor = System.Drawing.Color.White;
-            this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCompras.IconSize = 32;
-            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompras.Location = new System.Drawing.Point(0, 125);
-            this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.btnCompras.Rotation = 0D;
-            this.btnCompras.Size = new System.Drawing.Size(309, 75);
-            this.btnCompras.TabIndex = 1;
-            this.btnCompras.Text = "   Compras";
-            this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCompras.UseVisualStyleBackColor = true;
-            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // panelLogo
             // 
@@ -294,8 +133,9 @@
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(309, 125);
+            this.panelLogo.Size = new System.Drawing.Size(206, 81);
             this.panelLogo.TabIndex = 0;
             // 
             // panelTitulo
@@ -307,78 +147,12 @@
             this.panelTitulo.Controls.Add(this.btnCerrarFormHijo);
             this.panelTitulo.Controls.Add(this.lblTitulo);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitulo.Location = new System.Drawing.Point(309, 0);
+            this.panelTitulo.Location = new System.Drawing.Point(206, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(1146, 125);
+            this.panelTitulo.Size = new System.Drawing.Size(764, 81);
             this.panelTitulo.TabIndex = 1;
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.FlatAppearance.BorderSize = 0;
-            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnRestaurar.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
-            this.btnRestaurar.IconColor = System.Drawing.Color.Black;
-            this.btnRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRestaurar.IconSize = 32;
-            this.btnRestaurar.Location = new System.Drawing.Point(1050, 17);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Rotation = 0D;
-            this.btnRestaurar.Size = new System.Drawing.Size(33, 37);
-            this.btnRestaurar.TabIndex = 5;
-            this.btnRestaurar.UseVisualStyleBackColor = true;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinimizar.IconColor = System.Drawing.Color.Black;
-            this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimizar.IconSize = 32;
-            this.btnMinimizar.Location = new System.Drawing.Point(999, 17);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Rotation = 0D;
-            this.btnMinimizar.Size = new System.Drawing.Size(33, 37);
-            this.btnMinimizar.TabIndex = 4;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.btnCerrar.IconColor = System.Drawing.Color.Black;
-            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.IconSize = 32;
-            this.btnCerrar.Location = new System.Drawing.Point(1101, 17);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(33, 37);
-            this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
-            // 
-            // btnCerrarFormHijo
-            // 
-            this.btnCerrarFormHijo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarFormHijo.BackgroundImage")));
-            this.btnCerrarFormHijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCerrarFormHijo.FlatAppearance.BorderSize = 0;
-            this.btnCerrarFormHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarFormHijo.Location = new System.Drawing.Point(18, 32);
-            this.btnCerrarFormHijo.Name = "btnCerrarFormHijo";
-            this.btnCerrarFormHijo.Size = new System.Drawing.Size(38, 37);
-            this.btnCerrarFormHijo.TabIndex = 0;
-            this.btnCerrarFormHijo.UseVisualStyleBackColor = true;
-            this.btnCerrarFormHijo.Click += new System.EventHandler(this.btnCerrarFormHijo_Click);
             // 
             // lblTitulo
             // 
@@ -386,9 +160,10 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(476, 37);
+            this.lblTitulo.Location = new System.Drawing.Point(317, 24);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(202, 49);
+            this.lblTitulo.Size = new System.Drawing.Size(131, 33);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "iTech ERP";
             // 
@@ -404,9 +179,10 @@
             this.panelDesktop.Controls.Add(this.panelCompras);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(309, 125);
+            this.panelDesktop.Location = new System.Drawing.Point(206, 81);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1146, 755);
+            this.panelDesktop.Size = new System.Drawing.Size(764, 604);
             this.panelDesktop.TabIndex = 2;
             // 
             // panelFecha
@@ -417,9 +193,10 @@
             this.panelFecha.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelFecha.Font = new System.Drawing.Font("Ubuntu Light", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFecha.ForeColor = System.Drawing.Color.White;
-            this.panelFecha.Location = new System.Drawing.Point(0, 717);
+            this.panelFecha.Location = new System.Drawing.Point(0, 579);
+            this.panelFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelFecha.Name = "panelFecha";
-            this.panelFecha.Size = new System.Drawing.Size(1146, 38);
+            this.panelFecha.Size = new System.Drawing.Size(764, 25);
             this.panelFecha.TabIndex = 3;
             // 
             // lblFecha
@@ -427,9 +204,10 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblFecha.Font = new System.Drawing.Font("Ubuntu", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(960, 0);
+            this.lblFecha.Location = new System.Drawing.Point(642, 0);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(93, 33);
+            this.lblFecha.Size = new System.Drawing.Size(61, 22);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "label1";
             // 
@@ -438,9 +216,10 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblHora.Font = new System.Drawing.Font("Ubuntu", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1053, 0);
+            this.lblHora.Location = new System.Drawing.Point(703, 0);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(93, 33);
+            this.lblHora.Size = new System.Drawing.Size(61, 22);
             this.lblHora.TabIndex = 2;
             this.lblHora.Text = "label2";
             // 
@@ -455,8 +234,9 @@
             this.panelRecursosHumanos.Controls.Add(this.btnNominas);
             this.panelRecursosHumanos.Controls.Add(this.lblRecursosHumanos);
             this.panelRecursosHumanos.Location = new System.Drawing.Point(0, 0);
+            this.panelRecursosHumanos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelRecursosHumanos.Name = "panelRecursosHumanos";
-            this.panelRecursosHumanos.Size = new System.Drawing.Size(15, 1312);
+            this.panelRecursosHumanos.Size = new System.Drawing.Size(10, 966);
             this.panelRecursosHumanos.TabIndex = 6;
             // 
             // btnDepartamentos
@@ -466,12 +246,14 @@
             this.btnDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDepartamentos.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDepartamentos.ForeColor = System.Drawing.Color.Black;
-            this.btnDepartamentos.Location = new System.Drawing.Point(58, 112);
+            this.btnDepartamentos.Location = new System.Drawing.Point(39, 73);
+            this.btnDepartamentos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDepartamentos.Name = "btnDepartamentos";
-            this.btnDepartamentos.Size = new System.Drawing.Size(214, 45);
+            this.btnDepartamentos.Size = new System.Drawing.Size(143, 29);
             this.btnDepartamentos.TabIndex = 22;
             this.btnDepartamentos.Text = "RH001 - Departamentos";
             this.btnDepartamentos.UseVisualStyleBackColor = false;
+            this.btnDepartamentos.Click += new System.EventHandler(this.btnDepartamentos_Click);
             // 
             // btnPosiciones
             // 
@@ -480,12 +262,14 @@
             this.btnPosiciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPosiciones.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPosiciones.ForeColor = System.Drawing.Color.Black;
-            this.btnPosiciones.Location = new System.Drawing.Point(58, 177);
+            this.btnPosiciones.Location = new System.Drawing.Point(39, 115);
+            this.btnPosiciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPosiciones.Name = "btnPosiciones";
-            this.btnPosiciones.Size = new System.Drawing.Size(214, 45);
+            this.btnPosiciones.Size = new System.Drawing.Size(143, 29);
             this.btnPosiciones.TabIndex = 21;
             this.btnPosiciones.Text = "RH002 - Posiciones";
             this.btnPosiciones.UseVisualStyleBackColor = false;
+            this.btnPosiciones.Click += new System.EventHandler(this.btnPosiciones_Click);
             // 
             // btnEmpleados
             // 
@@ -494,12 +278,14 @@
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpleados.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpleados.Location = new System.Drawing.Point(58, 243);
+            this.btnEmpleados.Location = new System.Drawing.Point(39, 158);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(214, 45);
+            this.btnEmpleados.Size = new System.Drawing.Size(143, 29);
             this.btnEmpleados.TabIndex = 20;
             this.btnEmpleados.Text = "RH003 - Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnNominas
             // 
@@ -508,21 +294,24 @@
             this.btnNominas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNominas.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNominas.ForeColor = System.Drawing.Color.Black;
-            this.btnNominas.Location = new System.Drawing.Point(58, 308);
+            this.btnNominas.Location = new System.Drawing.Point(39, 200);
+            this.btnNominas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNominas.Name = "btnNominas";
-            this.btnNominas.Size = new System.Drawing.Size(214, 45);
+            this.btnNominas.Size = new System.Drawing.Size(143, 29);
             this.btnNominas.TabIndex = 19;
             this.btnNominas.Text = "RH004 - Nomina";
             this.btnNominas.UseVisualStyleBackColor = false;
+            this.btnNominas.Click += new System.EventHandler(this.btnNominas_Click);
             // 
             // lblRecursosHumanos
             // 
             this.lblRecursosHumanos.AutoSize = true;
             this.lblRecursosHumanos.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecursosHumanos.ForeColor = System.Drawing.Color.White;
-            this.lblRecursosHumanos.Location = new System.Drawing.Point(78, 31);
+            this.lblRecursosHumanos.Location = new System.Drawing.Point(52, 20);
+            this.lblRecursosHumanos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecursosHumanos.Name = "lblRecursosHumanos";
-            this.lblRecursosHumanos.Size = new System.Drawing.Size(193, 26);
+            this.lblRecursosHumanos.Size = new System.Drawing.Size(131, 17);
             this.lblRecursosHumanos.TabIndex = 5;
             this.lblRecursosHumanos.Text = "Recursos Humanos";
             // 
@@ -531,12 +320,14 @@
             this.panelFinanzas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelFinanzas.BackColor = System.Drawing.Color.White;
+            this.panelFinanzas.Controls.Add(this.btnMonedas);
             this.panelFinanzas.Controls.Add(this.btnCxC);
             this.panelFinanzas.Controls.Add(this.btnCxP);
             this.panelFinanzas.Controls.Add(this.label1);
             this.panelFinanzas.Location = new System.Drawing.Point(0, 0);
+            this.panelFinanzas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelFinanzas.Name = "panelFinanzas";
-            this.panelFinanzas.Size = new System.Drawing.Size(15, 1312);
+            this.panelFinanzas.Size = new System.Drawing.Size(10, 966);
             this.panelFinanzas.TabIndex = 11;
             // 
             // btnCxC
@@ -546,9 +337,10 @@
             this.btnCxC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCxC.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCxC.ForeColor = System.Drawing.Color.Black;
-            this.btnCxC.Location = new System.Drawing.Point(58, 177);
+            this.btnCxC.Location = new System.Drawing.Point(39, 117);
+            this.btnCxC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCxC.Name = "btnCxC";
-            this.btnCxC.Size = new System.Drawing.Size(214, 45);
+            this.btnCxC.Size = new System.Drawing.Size(143, 29);
             this.btnCxC.TabIndex = 7;
             this.btnCxC.Text = "FI002 - CxC";
             this.btnCxC.UseVisualStyleBackColor = false;
@@ -561,9 +353,10 @@
             this.btnCxP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCxP.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCxP.ForeColor = System.Drawing.Color.Black;
-            this.btnCxP.Location = new System.Drawing.Point(58, 103);
+            this.btnCxP.Location = new System.Drawing.Point(39, 67);
+            this.btnCxP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCxP.Name = "btnCxP";
-            this.btnCxP.Size = new System.Drawing.Size(214, 45);
+            this.btnCxP.Size = new System.Drawing.Size(143, 29);
             this.btnCxP.TabIndex = 6;
             this.btnCxP.Text = "FI001 - CxP";
             this.btnCxP.UseVisualStyleBackColor = false;
@@ -574,9 +367,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(126, 31);
+            this.label1.Location = new System.Drawing.Point(84, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 26);
+            this.label1.Size = new System.Drawing.Size(63, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Finanzas";
             // 
@@ -585,11 +379,16 @@
             this.panelSistema.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelSistema.BackColor = System.Drawing.Color.White;
+            this.panelSistema.Controls.Add(this.btnSectores);
+            this.panelSistema.Controls.Add(this.btnCiudades);
+            this.panelSistema.Controls.Add(this.btnProvincias);
+            this.panelSistema.Controls.Add(this.btnPaises);
             this.panelSistema.Controls.Add(this.btnProductos);
             this.panelSistema.Controls.Add(this.lblSistema);
             this.panelSistema.Location = new System.Drawing.Point(0, 0);
+            this.panelSistema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelSistema.Name = "panelSistema";
-            this.panelSistema.Size = new System.Drawing.Size(15, 1312);
+            this.panelSistema.Size = new System.Drawing.Size(10, 966);
             this.panelSistema.TabIndex = 10;
             // 
             // btnProductos
@@ -599,21 +398,24 @@
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ForeColor = System.Drawing.Color.Black;
-            this.btnProductos.Location = new System.Drawing.Point(58, 125);
+            this.btnProductos.Location = new System.Drawing.Point(39, 81);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(214, 45);
+            this.btnProductos.Size = new System.Drawing.Size(143, 29);
             this.btnProductos.TabIndex = 22;
             this.btnProductos.Text = "SI001 - Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // lblSistema
             // 
             this.lblSistema.AutoSize = true;
             this.lblSistema.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSistema.ForeColor = System.Drawing.Color.White;
-            this.lblSistema.Location = new System.Drawing.Point(124, 34);
+            this.lblSistema.Location = new System.Drawing.Point(83, 22);
+            this.lblSistema.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSistema.Name = "lblSistema";
-            this.lblSistema.Size = new System.Drawing.Size(88, 26);
+            this.lblSistema.Size = new System.Drawing.Size(60, 17);
             this.lblSistema.TabIndex = 4;
             this.lblSistema.Text = "Sistema";
             // 
@@ -622,12 +424,14 @@
             this.panelSeguridad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelSeguridad.BackColor = System.Drawing.Color.White;
+            this.panelSeguridad.Controls.Add(this.btnRolesAccesos);
             this.panelSeguridad.Controls.Add(this.btnUsuarios);
             this.panelSeguridad.Controls.Add(this.btnRolesUsuarios);
             this.panelSeguridad.Controls.Add(this.lblSeguridad);
             this.panelSeguridad.Location = new System.Drawing.Point(0, 0);
+            this.panelSeguridad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelSeguridad.Name = "panelSeguridad";
-            this.panelSeguridad.Size = new System.Drawing.Size(15, 1312);
+            this.panelSeguridad.Size = new System.Drawing.Size(10, 966);
             this.panelSeguridad.TabIndex = 9;
             // 
             // btnUsuarios
@@ -637,12 +441,14 @@
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.ForeColor = System.Drawing.Color.Black;
-            this.btnUsuarios.Location = new System.Drawing.Point(58, 102);
+            this.btnUsuarios.Location = new System.Drawing.Point(39, 66);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(214, 45);
+            this.btnUsuarios.Size = new System.Drawing.Size(143, 29);
             this.btnUsuarios.TabIndex = 22;
             this.btnUsuarios.Text = "SE001 - Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnRolesUsuarios
             // 
@@ -651,21 +457,24 @@
             this.btnRolesUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRolesUsuarios.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRolesUsuarios.ForeColor = System.Drawing.Color.Black;
-            this.btnRolesUsuarios.Location = new System.Drawing.Point(58, 166);
+            this.btnRolesUsuarios.Location = new System.Drawing.Point(39, 108);
+            this.btnRolesUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRolesUsuarios.Name = "btnRolesUsuarios";
-            this.btnRolesUsuarios.Size = new System.Drawing.Size(214, 45);
+            this.btnRolesUsuarios.Size = new System.Drawing.Size(143, 29);
             this.btnRolesUsuarios.TabIndex = 21;
-            this.btnRolesUsuarios.Text = "SE002 - Roles Usuarios";
+            this.btnRolesUsuarios.Text = "SE002 - Roles";
             this.btnRolesUsuarios.UseVisualStyleBackColor = false;
+            this.btnRolesUsuarios.Click += new System.EventHandler(this.btnRolesUsuarios_Click);
             // 
             // lblSeguridad
             // 
             this.lblSeguridad.AutoSize = true;
             this.lblSeguridad.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguridad.ForeColor = System.Drawing.Color.White;
-            this.lblSeguridad.Location = new System.Drawing.Point(120, 34);
+            this.lblSeguridad.Location = new System.Drawing.Point(80, 22);
+            this.lblSeguridad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeguridad.Name = "lblSeguridad";
-            this.lblSeguridad.Size = new System.Drawing.Size(108, 26);
+            this.lblSeguridad.Size = new System.Drawing.Size(73, 17);
             this.lblSeguridad.TabIndex = 4;
             this.lblSeguridad.Text = "Seguridad";
             // 
@@ -680,8 +489,9 @@
             this.panelVentas.Controls.Add(this.btnIngresos);
             this.panelVentas.Controls.Add(this.lblVentas);
             this.panelVentas.Location = new System.Drawing.Point(0, 0);
+            this.panelVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelVentas.Name = "panelVentas";
-            this.panelVentas.Size = new System.Drawing.Size(15, 1312);
+            this.panelVentas.Size = new System.Drawing.Size(10, 966);
             this.panelVentas.TabIndex = 8;
             // 
             // btnClientes
@@ -691,9 +501,10 @@
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.Black;
-            this.btnClientes.Location = new System.Drawing.Point(58, 100);
+            this.btnClientes.Location = new System.Drawing.Point(39, 65);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(214, 45);
+            this.btnClientes.Size = new System.Drawing.Size(143, 29);
             this.btnClientes.TabIndex = 18;
             this.btnClientes.Text = "VD001 - Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
@@ -706,9 +517,10 @@
             this.btnOrdenesVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenesVenta.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenesVenta.ForeColor = System.Drawing.Color.Black;
-            this.btnOrdenesVenta.Location = new System.Drawing.Point(58, 165);
+            this.btnOrdenesVenta.Location = new System.Drawing.Point(39, 107);
+            this.btnOrdenesVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOrdenesVenta.Name = "btnOrdenesVenta";
-            this.btnOrdenesVenta.Size = new System.Drawing.Size(214, 45);
+            this.btnOrdenesVenta.Size = new System.Drawing.Size(143, 29);
             this.btnOrdenesVenta.TabIndex = 17;
             this.btnOrdenesVenta.Text = "VD002 - Ordenes Venta";
             this.btnOrdenesVenta.UseVisualStyleBackColor = false;
@@ -721,9 +533,10 @@
             this.btnFacturasVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturasVenta.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturasVenta.ForeColor = System.Drawing.Color.Black;
-            this.btnFacturasVenta.Location = new System.Drawing.Point(58, 231);
+            this.btnFacturasVenta.Location = new System.Drawing.Point(39, 150);
+            this.btnFacturasVenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFacturasVenta.Name = "btnFacturasVenta";
-            this.btnFacturasVenta.Size = new System.Drawing.Size(214, 45);
+            this.btnFacturasVenta.Size = new System.Drawing.Size(143, 29);
             this.btnFacturasVenta.TabIndex = 16;
             this.btnFacturasVenta.Text = "VD003 - Factura Venta";
             this.btnFacturasVenta.UseVisualStyleBackColor = false;
@@ -736,9 +549,10 @@
             this.btnIngresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresos.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresos.ForeColor = System.Drawing.Color.Black;
-            this.btnIngresos.Location = new System.Drawing.Point(58, 295);
+            this.btnIngresos.Location = new System.Drawing.Point(39, 192);
+            this.btnIngresos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIngresos.Name = "btnIngresos";
-            this.btnIngresos.Size = new System.Drawing.Size(214, 45);
+            this.btnIngresos.Size = new System.Drawing.Size(143, 29);
             this.btnIngresos.TabIndex = 15;
             this.btnIngresos.Text = "VD004 - Ingresos";
             this.btnIngresos.UseVisualStyleBackColor = false;
@@ -749,9 +563,10 @@
             this.lblVentas.AutoSize = true;
             this.lblVentas.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVentas.ForeColor = System.Drawing.Color.White;
-            this.lblVentas.Location = new System.Drawing.Point(134, 34);
+            this.lblVentas.Location = new System.Drawing.Point(89, 22);
+            this.lblVentas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVentas.Name = "lblVentas";
-            this.lblVentas.Size = new System.Drawing.Size(80, 26);
+            this.lblVentas.Size = new System.Drawing.Size(52, 17);
             this.lblVentas.TabIndex = 4;
             this.lblVentas.Text = "Ventas";
             // 
@@ -769,8 +584,9 @@
             this.panelCompras.Controls.Add(this.btnInventario);
             this.panelCompras.Controls.Add(this.lblCompras);
             this.panelCompras.Location = new System.Drawing.Point(0, 0);
+            this.panelCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelCompras.Name = "panelCompras";
-            this.panelCompras.Size = new System.Drawing.Size(15, 1312);
+            this.panelCompras.Size = new System.Drawing.Size(10, 966);
             this.panelCompras.TabIndex = 7;
             this.panelCompras.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCompras_Paint);
             // 
@@ -781,9 +597,10 @@
             this.btnOrdenesCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenesCompras.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenesCompras.ForeColor = System.Drawing.Color.Black;
-            this.btnOrdenesCompras.Location = new System.Drawing.Point(58, 89);
+            this.btnOrdenesCompras.Location = new System.Drawing.Point(39, 58);
+            this.btnOrdenesCompras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOrdenesCompras.Name = "btnOrdenesCompras";
-            this.btnOrdenesCompras.Size = new System.Drawing.Size(214, 45);
+            this.btnOrdenesCompras.Size = new System.Drawing.Size(143, 29);
             this.btnOrdenesCompras.TabIndex = 14;
             this.btnOrdenesCompras.Text = "GP001 - Ordenes Compra";
             this.btnOrdenesCompras.UseVisualStyleBackColor = false;
@@ -796,9 +613,10 @@
             this.btnFacturasCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturasCompra.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturasCompra.ForeColor = System.Drawing.Color.Black;
-            this.btnFacturasCompra.Location = new System.Drawing.Point(58, 151);
+            this.btnFacturasCompra.Location = new System.Drawing.Point(39, 98);
+            this.btnFacturasCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFacturasCompra.Name = "btnFacturasCompra";
-            this.btnFacturasCompra.Size = new System.Drawing.Size(214, 45);
+            this.btnFacturasCompra.Size = new System.Drawing.Size(143, 29);
             this.btnFacturasCompra.TabIndex = 13;
             this.btnFacturasCompra.Text = "GP002 - Facturas";
             this.btnFacturasCompra.UseVisualStyleBackColor = false;
@@ -811,9 +629,10 @@
             this.btnEntradaMercancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntradaMercancia.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntradaMercancia.ForeColor = System.Drawing.Color.Black;
-            this.btnEntradaMercancia.Location = new System.Drawing.Point(58, 212);
+            this.btnEntradaMercancia.Location = new System.Drawing.Point(39, 138);
+            this.btnEntradaMercancia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntradaMercancia.Name = "btnEntradaMercancia";
-            this.btnEntradaMercancia.Size = new System.Drawing.Size(214, 45);
+            this.btnEntradaMercancia.Size = new System.Drawing.Size(143, 29);
             this.btnEntradaMercancia.TabIndex = 12;
             this.btnEntradaMercancia.Text = "GP003 - Entrada Merc.";
             this.btnEntradaMercancia.UseVisualStyleBackColor = false;
@@ -826,9 +645,10 @@
             this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevoluciones.ForeColor = System.Drawing.Color.Black;
-            this.btnDevoluciones.Location = new System.Drawing.Point(58, 274);
+            this.btnDevoluciones.Location = new System.Drawing.Point(39, 178);
+            this.btnDevoluciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDevoluciones.Name = "btnDevoluciones";
-            this.btnDevoluciones.Size = new System.Drawing.Size(214, 45);
+            this.btnDevoluciones.Size = new System.Drawing.Size(143, 29);
             this.btnDevoluciones.TabIndex = 11;
             this.btnDevoluciones.Text = "GP004 - Devoluciones";
             this.btnDevoluciones.UseVisualStyleBackColor = false;
@@ -841,9 +661,10 @@
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.ForeColor = System.Drawing.Color.Black;
-            this.btnProveedores.Location = new System.Drawing.Point(58, 335);
+            this.btnProveedores.Location = new System.Drawing.Point(39, 218);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(214, 45);
+            this.btnProveedores.Size = new System.Drawing.Size(143, 29);
             this.btnProveedores.TabIndex = 10;
             this.btnProveedores.Text = "GP005 - Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
@@ -856,9 +677,10 @@
             this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagos.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagos.ForeColor = System.Drawing.Color.Black;
-            this.btnPagos.Location = new System.Drawing.Point(58, 397);
+            this.btnPagos.Location = new System.Drawing.Point(39, 258);
+            this.btnPagos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(214, 45);
+            this.btnPagos.Size = new System.Drawing.Size(143, 29);
             this.btnPagos.TabIndex = 9;
             this.btnPagos.Text = "GP006 - Pagos";
             this.btnPagos.UseVisualStyleBackColor = false;
@@ -871,9 +693,10 @@
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.Color.Black;
-            this.btnInventario.Location = new System.Drawing.Point(58, 457);
+            this.btnInventario.Location = new System.Drawing.Point(39, 297);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(214, 45);
+            this.btnInventario.Size = new System.Drawing.Size(143, 29);
             this.btnInventario.TabIndex = 8;
             this.btnInventario.Text = "GP007 - Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
@@ -884,39 +707,437 @@
             this.lblCompras.AutoSize = true;
             this.lblCompras.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompras.ForeColor = System.Drawing.Color.White;
-            this.lblCompras.Location = new System.Drawing.Point(126, 34);
+            this.lblCompras.Location = new System.Drawing.Point(84, 22);
+            this.lblCompras.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompras.Name = "lblCompras";
-            this.lblCompras.Size = new System.Drawing.Size(95, 26);
+            this.lblCompras.Size = new System.Drawing.Size(64, 17);
             this.lblCompras.TabIndex = 7;
             this.lblCompras.Text = "Compras";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(286, 277);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(630, 169);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // timerFechaHoraActual
             // 
             this.timerFechaHoraActual.Enabled = true;
             this.timerFechaHoraActual.Tick += new System.EventHandler(this.timerFechaHoraActual_Tick);
             // 
+            // btnPaises
+            // 
+            this.btnPaises.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnPaises.FlatAppearance.BorderSize = 0;
+            this.btnPaises.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaises.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaises.ForeColor = System.Drawing.Color.Black;
+            this.btnPaises.Location = new System.Drawing.Point(39, 125);
+            this.btnPaises.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPaises.Name = "btnPaises";
+            this.btnPaises.Size = new System.Drawing.Size(143, 29);
+            this.btnPaises.TabIndex = 23;
+            this.btnPaises.Text = "SI002 - Paises";
+            this.btnPaises.UseVisualStyleBackColor = false;
+            this.btnPaises.Click += new System.EventHandler(this.btnPaises_Click);
+            // 
+            // btnProvincias
+            // 
+            this.btnProvincias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnProvincias.FlatAppearance.BorderSize = 0;
+            this.btnProvincias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProvincias.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProvincias.ForeColor = System.Drawing.Color.Black;
+            this.btnProvincias.Location = new System.Drawing.Point(39, 171);
+            this.btnProvincias.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProvincias.Name = "btnProvincias";
+            this.btnProvincias.Size = new System.Drawing.Size(143, 29);
+            this.btnProvincias.TabIndex = 24;
+            this.btnProvincias.Text = "SI003 - Provincias";
+            this.btnProvincias.UseVisualStyleBackColor = false;
+            this.btnProvincias.Click += new System.EventHandler(this.btnProvincias_Click);
+            // 
+            // btnCiudades
+            // 
+            this.btnCiudades.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnCiudades.FlatAppearance.BorderSize = 0;
+            this.btnCiudades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCiudades.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCiudades.ForeColor = System.Drawing.Color.Black;
+            this.btnCiudades.Location = new System.Drawing.Point(40, 218);
+            this.btnCiudades.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCiudades.Name = "btnCiudades";
+            this.btnCiudades.Size = new System.Drawing.Size(143, 29);
+            this.btnCiudades.TabIndex = 25;
+            this.btnCiudades.Text = "SI004 - Ciudades";
+            this.btnCiudades.UseVisualStyleBackColor = false;
+            this.btnCiudades.Click += new System.EventHandler(this.btnCiudades_Click);
+            // 
+            // btnSectores
+            // 
+            this.btnSectores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnSectores.FlatAppearance.BorderSize = 0;
+            this.btnSectores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSectores.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSectores.ForeColor = System.Drawing.Color.Black;
+            this.btnSectores.Location = new System.Drawing.Point(39, 265);
+            this.btnSectores.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSectores.Name = "btnSectores";
+            this.btnSectores.Size = new System.Drawing.Size(143, 29);
+            this.btnSectores.TabIndex = 26;
+            this.btnSectores.Text = "SI005 - Sectores";
+            this.btnSectores.UseVisualStyleBackColor = false;
+            this.btnSectores.Click += new System.EventHandler(this.btnSectores_Click);
+            // 
+            // btnRolesAccesos
+            // 
+            this.btnRolesAccesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnRolesAccesos.FlatAppearance.BorderSize = 0;
+            this.btnRolesAccesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRolesAccesos.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRolesAccesos.ForeColor = System.Drawing.Color.Black;
+            this.btnRolesAccesos.Location = new System.Drawing.Point(39, 150);
+            this.btnRolesAccesos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRolesAccesos.Name = "btnRolesAccesos";
+            this.btnRolesAccesos.Size = new System.Drawing.Size(143, 29);
+            this.btnRolesAccesos.TabIndex = 23;
+            this.btnRolesAccesos.Text = "SE003 - Roles Accesos";
+            this.btnRolesAccesos.UseVisualStyleBackColor = false;
+            this.btnRolesAccesos.Click += new System.EventHandler(this.btnRolesAccesos_Click);
+            // 
+            // btnMonedas
+            // 
+            this.btnMonedas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.btnMonedas.FlatAppearance.BorderSize = 0;
+            this.btnMonedas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMonedas.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMonedas.ForeColor = System.Drawing.Color.Black;
+            this.btnMonedas.Location = new System.Drawing.Point(39, 167);
+            this.btnMonedas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMonedas.Name = "btnMonedas";
+            this.btnMonedas.Size = new System.Drawing.Size(143, 29);
+            this.btnMonedas.TabIndex = 8;
+            this.btnMonedas.Text = "FI003 - Monedas";
+            this.btnMonedas.UseVisualStyleBackColor = false;
+            this.btnMonedas.Click += new System.EventHandler(this.btnMonedas_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(191, 237);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(420, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.FlatAppearance.BorderSize = 0;
+            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestaurar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnRestaurar.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
+            this.btnRestaurar.IconColor = System.Drawing.Color.Black;
+            this.btnRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRestaurar.IconSize = 32;
+            this.btnRestaurar.Location = new System.Drawing.Point(700, 11);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Rotation = 0D;
+            this.btnRestaurar.Size = new System.Drawing.Size(22, 24);
+            this.btnRestaurar.TabIndex = 5;
+            this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinimizar.IconColor = System.Drawing.Color.Black;
+            this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinimizar.IconSize = 32;
+            this.btnMinimizar.Location = new System.Drawing.Point(666, 11);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Rotation = 0D;
+            this.btnMinimizar.Size = new System.Drawing.Size(22, 24);
+            this.btnMinimizar.TabIndex = 4;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.btnCerrar.IconColor = System.Drawing.Color.Black;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 32;
+            this.btnCerrar.Location = new System.Drawing.Point(734, 11);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Rotation = 0D;
+            this.btnCerrar.Size = new System.Drawing.Size(22, 24);
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
+            // 
+            // btnCerrarFormHijo
+            // 
+            this.btnCerrarFormHijo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarFormHijo.BackgroundImage")));
+            this.btnCerrarFormHijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrarFormHijo.FlatAppearance.BorderSize = 0;
+            this.btnCerrarFormHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarFormHijo.Location = new System.Drawing.Point(12, 21);
+            this.btnCerrarFormHijo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrarFormHijo.Name = "btnCerrarFormHijo";
+            this.btnCerrarFormHijo.Size = new System.Drawing.Size(25, 24);
+            this.btnCerrarFormHijo.TabIndex = 0;
+            this.btnCerrarFormHijo.UseVisualStyleBackColor = true;
+            this.btnCerrarFormHijo.Click += new System.EventHandler(this.btnCerrarFormHijo_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnLogOut.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogOut.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.btnLogOut.IconColor = System.Drawing.Color.White;
+            this.btnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogOut.IconSize = 32;
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 636);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnLogOut.Rotation = 0D;
+            this.btnLogOut.Size = new System.Drawing.Size(206, 49);
+            this.btnLogOut.TabIndex = 7;
+            this.btnLogOut.Text = "   Cerrar Sección";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
+            // btnSistema
+            // 
+            this.btnSistema.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSistema.FlatAppearance.BorderSize = 0;
+            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSistema.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSistema.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSistema.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            this.btnSistema.IconColor = System.Drawing.Color.White;
+            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSistema.IconSize = 32;
+            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSistema.Location = new System.Drawing.Point(0, 326);
+            this.btnSistema.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSistema.Name = "btnSistema";
+            this.btnSistema.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnSistema.Rotation = 0D;
+            this.btnSistema.Size = new System.Drawing.Size(206, 49);
+            this.btnSistema.TabIndex = 6;
+            this.btnSistema.Text = "   Sistema";
+            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSistema.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSistema.UseVisualStyleBackColor = true;
+            this.btnSistema.Click += new System.EventHandler(this.btnSistema_Click);
+            // 
+            // btnSeguridad
+            // 
+            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSeguridad.FlatAppearance.BorderSize = 0;
+            this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeguridad.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSeguridad.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeguridad.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSeguridad.IconChar = FontAwesome.Sharp.IconChar.ShieldAlt;
+            this.btnSeguridad.IconColor = System.Drawing.Color.White;
+            this.btnSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSeguridad.IconSize = 32;
+            this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 277);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSeguridad.Name = "btnSeguridad";
+            this.btnSeguridad.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnSeguridad.Rotation = 0D;
+            this.btnSeguridad.Size = new System.Drawing.Size(206, 49);
+            this.btnSeguridad.TabIndex = 5;
+            this.btnSeguridad.Text = "   Seguridad";
+            this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSeguridad.UseVisualStyleBackColor = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
+            // 
+            // btnFinanzas
+            // 
+            this.btnFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFinanzas.FlatAppearance.BorderSize = 0;
+            this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinanzas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnFinanzas.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinanzas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFinanzas.IconChar = FontAwesome.Sharp.IconChar.Landmark;
+            this.btnFinanzas.IconColor = System.Drawing.Color.White;
+            this.btnFinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFinanzas.IconSize = 32;
+            this.btnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanzas.Location = new System.Drawing.Point(0, 228);
+            this.btnFinanzas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFinanzas.Name = "btnFinanzas";
+            this.btnFinanzas.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnFinanzas.Rotation = 0D;
+            this.btnFinanzas.Size = new System.Drawing.Size(206, 49);
+            this.btnFinanzas.TabIndex = 4;
+            this.btnFinanzas.Text = "   Finanzas";
+            this.btnFinanzas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFinanzas.UseVisualStyleBackColor = true;
+            this.btnFinanzas.Click += new System.EventHandler(this.btnFinanzas_Click);
+            // 
+            // btnRecursosHumanos
+            // 
+            this.btnRecursosHumanos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecursosHumanos.FlatAppearance.BorderSize = 0;
+            this.btnRecursosHumanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecursosHumanos.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnRecursosHumanos.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecursosHumanos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRecursosHumanos.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnRecursosHumanos.IconColor = System.Drawing.Color.White;
+            this.btnRecursosHumanos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRecursosHumanos.IconSize = 32;
+            this.btnRecursosHumanos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecursosHumanos.Location = new System.Drawing.Point(0, 179);
+            this.btnRecursosHumanos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRecursosHumanos.Name = "btnRecursosHumanos";
+            this.btnRecursosHumanos.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnRecursosHumanos.Rotation = 0D;
+            this.btnRecursosHumanos.Size = new System.Drawing.Size(206, 49);
+            this.btnRecursosHumanos.TabIndex = 3;
+            this.btnRecursosHumanos.Text = "   Recursos Humanos";
+            this.btnRecursosHumanos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecursosHumanos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRecursosHumanos.UseVisualStyleBackColor = true;
+            this.btnRecursosHumanos.Click += new System.EventHandler(this.btnRecursosHumanos_Click);
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVentas.FlatAppearance.BorderSize = 0;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnVentas.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.Tags;
+            this.btnVentas.IconColor = System.Drawing.Color.White;
+            this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVentas.IconSize = 32;
+            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVentas.Location = new System.Drawing.Point(0, 130);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnVentas.Rotation = 0D;
+            this.btnVentas.Size = new System.Drawing.Size(206, 49);
+            this.btnVentas.TabIndex = 2;
+            this.btnVentas.Text = "   Ventas";
+            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            // 
+            // btnCompras
+            // 
+            this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCompras.Font = new System.Drawing.Font("Ubuntu Light", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompras.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.StoreAlt;
+            this.btnCompras.IconColor = System.Drawing.Color.White;
+            this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompras.IconSize = 32;
+            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompras.Location = new System.Drawing.Point(0, 81);
+            this.btnCompras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnCompras.Rotation = 0D;
+            this.btnCompras.Size = new System.Drawing.Size(206, 49);
+            this.btnCompras.TabIndex = 1;
+            this.btnCompras.Text = "   Compras";
+            this.btnCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCompras.UseVisualStyleBackColor = true;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
+            // 
+            // panelUser
+            // 
+            this.panelUser.Controls.Add(this.label3);
+            this.panelUser.Controls.Add(this.label2);
+            this.panelUser.Controls.Add(this.iconPictureBox1);
+            this.panelUser.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelUser.Location = new System.Drawing.Point(0, 547);
+            this.panelUser.Name = "panelUser";
+            this.panelUser.Size = new System.Drawing.Size(206, 89);
+            this.panelUser.TabIndex = 8;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(12, 32);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(37, 35);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(59, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "jsantos";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(59, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Administrador";
+            // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1455, 880);
+            this.ClientSize = new System.Drawing.Size(970, 685);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1063, 605);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(714, 407);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
@@ -940,6 +1161,9 @@
             this.panelCompras.ResumeLayout(false);
             this.panelCompras.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelUser.ResumeLayout(false);
+            this.panelUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -999,5 +1223,15 @@
         private System.Windows.Forms.Button btnPagos;
         private System.Windows.Forms.Button btnInventario;
         private FontAwesome.Sharp.IconButton btnLogOut;
+        private System.Windows.Forms.Button btnSectores;
+        private System.Windows.Forms.Button btnCiudades;
+        private System.Windows.Forms.Button btnProvincias;
+        private System.Windows.Forms.Button btnPaises;
+        private System.Windows.Forms.Button btnRolesAccesos;
+        private System.Windows.Forms.Button btnMonedas;
+        private System.Windows.Forms.Panel panelUser;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

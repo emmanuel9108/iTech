@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Almacen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +49,6 @@
             this.Impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Neto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,6 +70,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1497, 87);
             this.panel1.TabIndex = 0;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.richTextBox1.Font = new System.Drawing.Font("Ubuntu", 14.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.DarkGray;
+            this.richTextBox1.Location = new System.Drawing.Point(1214, 23);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(253, 37);
+            this.richTextBox1.TabIndex = 52;
+            this.richTextBox1.Text = "Proveedor";
+            this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click);
+            this.richTextBox1.Enter += new System.EventHandler(this.richTextBox1_Enter);
+            this.richTextBox1.MouseEnter += new System.EventHandler(this.richTextBox1_MouseEnter);
+            this.richTextBox1.MouseLeave += new System.EventHandler(this.richTextBox1_MouseLeave);
             // 
             // label1
             // 
@@ -95,14 +111,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
@@ -119,95 +135,37 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1497, 524);
             this.dataGridView1.TabIndex = 1;
             // 
-            // Producto
+            // iconPictureBox1
             // 
-            this.Producto.Frozen = true;
-            this.Producto.HeaderText = "Número";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            this.Producto.Width = 185;
-            // 
-            // Almacen
-            // 
-            this.Almacen.Frozen = true;
-            this.Almacen.HeaderText = "Fecha";
-            this.Almacen.Name = "Almacen";
-            this.Almacen.ReadOnly = true;
-            this.Almacen.Width = 185;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.Frozen = true;
-            this.Cantidad.HeaderText = "Proveedor";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 185;
-            // 
-            // Precio
-            // 
-            this.Precio.Frozen = true;
-            this.Precio.HeaderText = "Término";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            this.Precio.Width = 185;
-            // 
-            // Bruto
-            // 
-            this.Bruto.Frozen = true;
-            this.Bruto.HeaderText = "Referencia";
-            this.Bruto.Name = "Bruto";
-            this.Bruto.ReadOnly = true;
-            this.Bruto.Width = 185;
-            // 
-            // Descuento
-            // 
-            this.Descuento.Frozen = true;
-            this.Descuento.HeaderText = "Factura";
-            this.Descuento.Name = "Descuento";
-            this.Descuento.ReadOnly = true;
-            this.Descuento.Width = 185;
-            // 
-            // Impuesto
-            // 
-            this.Impuesto.Frozen = true;
-            this.Impuesto.HeaderText = "Total";
-            this.Impuesto.Name = "Impuesto";
-            this.Impuesto.ReadOnly = true;
-            this.Impuesto.Width = 185;
-            // 
-            // Neto
-            // 
-            this.Neto.Frozen = true;
-            this.Neto.HeaderText = "Moneda";
-            this.Neto.Name = "Neto";
-            this.Neto.ReadOnly = true;
-            this.Neto.Width = 185;
-            // 
-            // Estatus
-            // 
-            this.Estatus.Frozen = true;
-            this.Estatus.HeaderText = "Estatus";
-            this.Estatus.Name = "Estatus";
-            this.Estatus.ReadOnly = true;
-            this.Estatus.Width = 185;
+            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 40;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1167, 23);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.TabIndex = 51;
+            this.iconPictureBox1.TabStop = false;
             // 
             // iconButton2
             // 
@@ -271,35 +229,77 @@
             this.iconButton4.UseVisualStyleBackColor = true;
             this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
-            // richTextBox1
+            // Producto
             // 
-            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.richTextBox1.Font = new System.Drawing.Font("Ubuntu", 14.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.richTextBox1.Location = new System.Drawing.Point(1214, 23);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(253, 37);
-            this.richTextBox1.TabIndex = 52;
-            this.richTextBox1.Text = "Proveedor";
-            this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click);
-            this.richTextBox1.Enter += new System.EventHandler(this.richTextBox1_Enter);
-            this.richTextBox1.MouseEnter += new System.EventHandler(this.richTextBox1_MouseEnter);
-            this.richTextBox1.MouseLeave += new System.EventHandler(this.richTextBox1_MouseLeave);
+            this.Producto.Frozen = true;
+            this.Producto.HeaderText = "Número";
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Width = 185;
             // 
-            // iconPictureBox1
+            // Almacen
             // 
-            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1167, 23);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.iconPictureBox1.TabIndex = 51;
-            this.iconPictureBox1.TabStop = false;
+            this.Almacen.Frozen = true;
+            this.Almacen.HeaderText = "Fecha";
+            this.Almacen.Name = "Almacen";
+            this.Almacen.ReadOnly = true;
+            this.Almacen.Width = 185;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.Frozen = true;
+            this.Cantidad.HeaderText = "Proveedor";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 185;
+            // 
+            // Precio
+            // 
+            this.Precio.Frozen = true;
+            this.Precio.HeaderText = "Término";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            this.Precio.Width = 185;
+            // 
+            // Bruto
+            // 
+            this.Bruto.Frozen = true;
+            this.Bruto.HeaderText = "Referencia";
+            this.Bruto.Name = "Bruto";
+            this.Bruto.ReadOnly = true;
+            this.Bruto.Width = 185;
+            // 
+            // Descuento
+            // 
+            this.Descuento.Frozen = true;
+            this.Descuento.HeaderText = "Comprobante";
+            this.Descuento.Name = "Descuento";
+            this.Descuento.ReadOnly = true;
+            this.Descuento.Width = 185;
+            // 
+            // Impuesto
+            // 
+            this.Impuesto.Frozen = true;
+            this.Impuesto.HeaderText = "Total";
+            this.Impuesto.Name = "Impuesto";
+            this.Impuesto.ReadOnly = true;
+            this.Impuesto.Width = 185;
+            // 
+            // Neto
+            // 
+            this.Neto.Frozen = true;
+            this.Neto.HeaderText = "Moneda";
+            this.Neto.Name = "Neto";
+            this.Neto.ReadOnly = true;
+            this.Neto.Width = 185;
+            // 
+            // Estatus
+            // 
+            this.Estatus.Frozen = true;
+            this.Estatus.HeaderText = "Estatus";
+            this.Estatus.Name = "Estatus";
+            this.Estatus.ReadOnly = true;
+            this.Estatus.Width = 185;
             // 
             // Devoluciones_Compra_Consulta
             // 
@@ -309,7 +309,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Devoluciones_Compra_Consulta";
-            this.Text = "Devoluciones_Compra_Consulta";
+            this.Text = "Entradas de Mercancia";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -327,6 +327,9 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Almacen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
@@ -336,8 +339,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Impuesto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Neto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estatus;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

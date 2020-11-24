@@ -29,14 +29,14 @@ namespace iTechERP.Ventas
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Facturas_ventas factura_v = new  Facturas_ventas();
+            Facturas_Ventas factura_v = new  Facturas_Ventas();
             this.Close();
             factura_v.Show();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Objetos_Impresiones.Compras.gpEntrada gpDevolucionImpresion = new Objetos_Impresiones.Compras.gpEntrada();
+            Objetos_Impresiones.Ventas.vdDocFactura gpDevolucionImpresion = new Objetos_Impresiones.Ventas.vdDocFactura();
             gpDevolucionImpresion.Show();
         }
 
@@ -52,7 +52,7 @@ namespace iTechERP.Ventas
 
         private void richTextBox1_Enter(object sender, EventArgs e)
         {
-            if (richTextBox1.Text == "Proveedor")
+            if (richTextBox1.Text == "Cliente")
             {
                 richTextBox1.Text = "";
                 richTextBox1.ForeColor = Color.White;
@@ -63,9 +63,14 @@ namespace iTechERP.Ventas
         {
             if (richTextBox1.Text == "")
             {
-                richTextBox1.Text = "Proveedor";
+                richTextBox1.Text = "Cliente";
                 richTextBox1.ForeColor = Color.DarkGray;                
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

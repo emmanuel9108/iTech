@@ -64,6 +64,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras\Proveedores_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Proveedores_consulta.Designer.cs">
+      <DependentUpon>Proveedores_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Devoluciones_Compra Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Devoluciones_Compra Consulta.Designer.cs">
+      <DependentUpon>Devoluciones_Compra Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compras\Entradas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,180 @@
     </Compile>
     <Compile Include="Compras\Entradas Consulta.Designer.cs">
       <DependentUpon>Entradas Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Monedas_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Monedas_Consulta.Designer.cs">
+      <DependentUpon>Monedas_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finanzas\Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finanzas\Monedas.Designer.cs">
+      <DependentUpon>Monedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Empleados_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Empleados_Consulta.Designer.cs">
+      <DependentUpon>Empleados_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Nominas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Nominas.Designer.cs">
+      <DependentUpon>Nominas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Nominas_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Nominas_Consulta.Designer.cs">
+      <DependentUpon>Nominas_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Posiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Posiciones.Designer.cs">
+      <DependentUpon>Posiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Posiciones_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Posiciones_Consulta.Designer.cs">
+      <DependentUpon>Posiciones_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Departamentos_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Departamentos_Consulta.Designer.cs">
+      <DependentUpon>Departamentos_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RRHH\Departamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RRHH\Departamentos.Designer.cs">
+      <DependentUpon>Departamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\RolesAccesos_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\RolesAccesos_Consulta.Designer.cs">
+      <DependentUpon>RolesAccesos_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\RolesAccesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\RolesAccesos.Designer.cs">
+      <DependentUpon>RolesAccesos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Roles_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Roles_Consulta.Designer.cs">
+      <DependentUpon>Roles_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Usuarios_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Usuarios_Consulta.Designer.cs">
+      <DependentUpon>Usuarios_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sectores.Designer.cs">
+      <DependentUpon>Sectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ciudades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ciudades.Designer.cs">
+      <DependentUpon>Ciudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Sectores_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Sectores_Consulta.Designer.cs">
+      <DependentUpon>Sectores_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Provincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Provincias.Designer.cs">
+      <DependentUpon>Provincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Paises.Designer.cs">
+      <DependentUpon>Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Ciudades_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Ciudades_Consulta.Designer.cs">
+      <DependentUpon>Ciudades_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Provincias_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Provincias_Consulta.Designer.cs">
+      <DependentUpon>Provincias_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Paises_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Paises_Consulta.Designer.cs">
+      <DependentUpon>Paises_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Productos_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Productos_Consulta.Designer.cs">
+      <DependentUpon>Productos_Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_V.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ordenes_V.Designer.cs">
+      <DependentUpon>Ordenes_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ingresos.Designer.cs">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Facturas_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Facturas_Ventas.Designer.cs">
+      <DependentUpon>Facturas_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Compras\Facturas_Compra_consulta.cs">
       <SubType>Form</SubType>
@@ -117,12 +303,6 @@
     </Compile>
     <Compile Include="Compras\Ordenes_Compra Consulta.Designer.cs">
       <DependentUpon>Ordenes_Compra Consulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Compras\Devoluciones_Compra Consulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras\Devoluciones_Compra Consulta.Designer.cs">
-      <DependentUpon>Devoluciones_Compra Consulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Compras\Devoluciones_Compra.cs">
       <SubType>Form</SubType>
@@ -232,72 +412,6 @@
     <Compile Include="Objetos Impresiones\Ventas\vdDocOrden.Designer.cs">
       <DependentUpon>vdDocOrden.cs</DependentUpon>
     </Compile>
-    <Compile Include="RRHH\Departamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RRHH\Departamentos.Designer.cs">
-      <DependentUpon>Departamentos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RRHH\Empleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RRHH\Empleados.Designer.cs">
-      <DependentUpon>Empleados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RRHH\Nominas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RRHH\Nominas.Designer.cs">
-      <DependentUpon>Nominas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RRHH\Posiciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RRHH\Posiciones.Designer.cs">
-      <DependentUpon>Posiciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Seguridad\Roles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Seguridad\Roles.Designer.cs">
-      <DependentUpon>Roles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Seguridad\Usuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Seguridad\Usuarios.Designer.cs">
-      <DependentUpon>Usuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sistema\Ciudades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sistema\Ciudades.Designer.cs">
-      <DependentUpon>Ciudades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sistema\Paises.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sistema\Paises.Designer.cs">
-      <DependentUpon>Paises.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sistema\Productos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sistema\Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sistema\Provincias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sistema\Provincias.Designer.cs">
-      <DependentUpon>Provincias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sistema\Sectores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Sistema\Sectores.Designer.cs">
-      <DependentUpon>Sectores.cs</DependentUpon>
-    </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,12 +439,6 @@
     <Compile Include="Ventas\Cliente_consulta.Designer.cs">
       <DependentUpon>Cliente_consulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Facturas_ventas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventas\Facturas_Ventas.Designer.cs">
-      <DependentUpon>Facturas_ventas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventas\Facturas_Ventas_consulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,29 +451,110 @@
     <Compile Include="Ventas\Ingresos_Consulta.Designer.cs">
       <DependentUpon>Ingresos_Consulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Ordenes_V.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventas\Ordenes_V.Designer.cs">
-      <DependentUpon>Ordenes_V.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventas\Ordenes_Venta_Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventas\Ordenes_Venta_Consulta.Designer.cs">
       <DependentUpon>Ordenes_Venta_Consulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Ingresos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventas\Ingresos.Designer.cs">
-      <DependentUpon>Ingresos.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Compras\Proveedores_consulta.resx">
+      <DependentUpon>Proveedores_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Devoluciones_Compra Consulta.resx">
+      <DependentUpon>Devoluciones_Compra Consulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Compras\Entradas.resx">
       <DependentUpon>Entradas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Entradas Consulta.resx">
       <DependentUpon>Entradas Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\Monedas_Consulta.resx">
+      <DependentUpon>Monedas_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finanzas\Monedas.resx">
+      <DependentUpon>Monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Empleados_Consulta.resx">
+      <DependentUpon>Empleados_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Nominas.resx">
+      <DependentUpon>Nominas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Nominas_Consulta.resx">
+      <DependentUpon>Nominas_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Posiciones.resx">
+      <DependentUpon>Posiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Posiciones_Consulta.resx">
+      <DependentUpon>Posiciones_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Departamentos_Consulta.resx">
+      <DependentUpon>Departamentos_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RRHH\Departamentos.resx">
+      <DependentUpon>Departamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\RolesAccesos_Consulta.resx">
+      <DependentUpon>RolesAccesos_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\RolesAccesos.resx">
+      <DependentUpon>RolesAccesos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Roles_Consulta.resx">
+      <DependentUpon>Roles_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Usuarios_Consulta.resx">
+      <DependentUpon>Usuarios_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Sectores.resx">
+      <DependentUpon>Sectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Ciudades.resx">
+      <DependentUpon>Ciudades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Sectores_Consulta.resx">
+      <DependentUpon>Sectores_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Provincias.resx">
+      <DependentUpon>Provincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Paises.resx">
+      <DependentUpon>Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Ciudades_Consulta.resx">
+      <DependentUpon>Ciudades_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Provincias_Consulta.resx">
+      <DependentUpon>Provincias_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Paises_Consulta.resx">
+      <DependentUpon>Paises_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Productos_Consulta.resx">
+      <DependentUpon>Productos_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ordenes_V.resx">
+      <DependentUpon>Ordenes_V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ingresos.resx">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Facturas_Ventas.resx">
+      <DependentUpon>Facturas_Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Facturas_Compra_consulta.resx">
       <DependentUpon>Facturas_Compra_consulta.cs</DependentUpon>
@@ -387,9 +576,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Ordenes_Compra Consulta.resx">
       <DependentUpon>Ordenes_Compra Consulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Compras\Devoluciones_Compra Consulta.resx">
-      <DependentUpon>Devoluciones_Compra Consulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compras\Devoluciones_Compra.resx">
       <DependentUpon>Devoluciones_Compra.cs</DependentUpon>
@@ -467,23 +653,14 @@
     <EmbeddedResource Include="Ventas\Cliente_consulta.resx">
       <DependentUpon>Cliente_consulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Facturas_ventas.resx">
-      <DependentUpon>Facturas_ventas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Facturas_Ventas_consulta.resx">
       <DependentUpon>Facturas_Ventas_consulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Ingresos_Consulta.resx">
       <DependentUpon>Ingresos_Consulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Ordenes_V.resx">
-      <DependentUpon>Ordenes_V.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Ordenes_Venta_Consulta.resx">
       <DependentUpon>Ordenes_Venta_Consulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Ingresos.resx">
-      <DependentUpon>Ingresos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

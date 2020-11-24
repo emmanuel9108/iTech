@@ -41,13 +41,24 @@
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel_detalle = new System.Windows.Forms.Panel();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Almacen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bruto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Neto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -66,21 +77,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Almacen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bruto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Neto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_detalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -212,7 +212,7 @@
             this.panel_detalle.Controls.Add(this.textBox5);
             this.panel_detalle.Controls.Add(this.textBox4);
             this.panel_detalle.Controls.Add(this.textBox3);
-            this.panel_detalle.Controls.Add(this.textBox1);
+            this.panel_detalle.Controls.Add(this.textBox20);
             this.panel_detalle.Controls.Add(this.iconButton3);
             this.panel_detalle.Controls.Add(this.iconButton4);
             this.panel_detalle.Controls.Add(this.comboBox5);
@@ -230,6 +230,15 @@
             this.panel_detalle.Name = "panel_detalle";
             this.panel_detalle.Size = new System.Drawing.Size(1401, 399);
             this.panel_detalle.TabIndex = 33;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(289, 64);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(182, 28);
+            this.comboBox6.TabIndex = 54;
             // 
             // dataGridView2
             // 
@@ -266,6 +275,62 @@
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(841, 352);
             this.dataGridView2.TabIndex = 53;
+            // 
+            // Producto
+            // 
+            this.Producto.Frozen = true;
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            // 
+            // Almacen
+            // 
+            this.Almacen.Frozen = true;
+            this.Almacen.HeaderText = "UnidadID";
+            this.Almacen.Name = "Almacen";
+            this.Almacen.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.Frozen = true;
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.Frozen = true;
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Bruto
+            // 
+            this.Bruto.Frozen = true;
+            this.Bruto.HeaderText = "Bruto";
+            this.Bruto.Name = "Bruto";
+            this.Bruto.ReadOnly = true;
+            // 
+            // Descuento
+            // 
+            this.Descuento.Frozen = true;
+            this.Descuento.HeaderText = "Descuento";
+            this.Descuento.Name = "Descuento";
+            this.Descuento.ReadOnly = true;
+            // 
+            // Impuesto
+            // 
+            this.Impuesto.Frozen = true;
+            this.Impuesto.HeaderText = "Impuesto";
+            this.Impuesto.Name = "Impuesto";
+            this.Impuesto.ReadOnly = true;
+            // 
+            // Neto
+            // 
+            this.Neto.Frozen = true;
+            this.Neto.HeaderText = "Neto";
+            this.Neto.Name = "Neto";
+            this.Neto.ReadOnly = true;
             // 
             // textBox7
             // 
@@ -309,13 +374,57 @@
             this.textBox3.Size = new System.Drawing.Size(182, 26);
             this.textBox3.TabIndex = 48;
             // 
-            // textBox1
+            // textBox20
             // 
-            this.textBox1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(289, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 26);
-            this.textBox1.TabIndex = 46;
+            this.textBox20.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox20.Location = new System.Drawing.Point(289, 27);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(182, 26);
+            this.textBox20.TabIndex = 46;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.White;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.Location = new System.Drawing.Point(289, 338);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(185, 40);
+            this.iconButton3.TabIndex = 45;
+            this.iconButton3.Text = "        Cancelar";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton4.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 32;
+            this.iconButton4.Location = new System.Drawing.Point(66, 338);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Rotation = 0D;
+            this.iconButton4.Size = new System.Drawing.Size(185, 40);
+            this.iconButton4.TabIndex = 44;
+            this.iconButton4.Text = "        Guardar";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseVisualStyleBackColor = false;
             // 
             // comboBox5
             // 
@@ -479,7 +588,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.iconButton2);
@@ -532,14 +641,14 @@
             this.textBox9.Size = new System.Drawing.Size(182, 26);
             this.textBox9.TabIndex = 48;
             // 
-            // textBox8
+            // textBox1
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(287, 50);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(182, 26);
-            this.textBox8.TabIndex = 47;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(287, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(182, 26);
+            this.textBox1.TabIndex = 47;
             // 
             // panel1
             // 
@@ -594,115 +703,6 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
-            // 
-            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.Location = new System.Drawing.Point(289, 338);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(185, 40);
-            this.iconButton3.TabIndex = 45;
-            this.iconButton3.Text = "        Cancelar";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton4.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.Location = new System.Drawing.Point(66, 338);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Rotation = 0D;
-            this.iconButton4.Size = new System.Drawing.Size(185, 40);
-            this.iconButton4.TabIndex = 44;
-            this.iconButton4.Text = "        Guardar";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(289, 64);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(182, 28);
-            this.comboBox6.TabIndex = 54;
-            // 
-            // Producto
-            // 
-            this.Producto.Frozen = true;
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Almacen
-            // 
-            this.Almacen.Frozen = true;
-            this.Almacen.HeaderText = "UnidadID";
-            this.Almacen.Name = "Almacen";
-            this.Almacen.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.Frozen = true;
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.Frozen = true;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Bruto
-            // 
-            this.Bruto.Frozen = true;
-            this.Bruto.HeaderText = "Bruto";
-            this.Bruto.Name = "Bruto";
-            this.Bruto.ReadOnly = true;
-            // 
-            // Descuento
-            // 
-            this.Descuento.Frozen = true;
-            this.Descuento.HeaderText = "Descuento";
-            this.Descuento.Name = "Descuento";
-            this.Descuento.ReadOnly = true;
-            // 
-            // Impuesto
-            // 
-            this.Impuesto.Frozen = true;
-            this.Impuesto.HeaderText = "Impuesto";
-            this.Impuesto.Name = "Impuesto";
-            this.Impuesto.ReadOnly = true;
-            // 
-            // Neto
-            // 
-            this.Neto.Frozen = true;
-            this.Neto.HeaderText = "Neto";
-            this.Neto.Name = "Neto";
-            this.Neto.ReadOnly = true;
-            // 
             // Devoluciones_Compra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -717,7 +717,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Devoluciones_Compra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Devoluciones_Compra";
+            this.Text = "Devoluciones Compra";
             this.Load += new System.EventHandler(this.Devoluciones_Compra_Load);
             this.panel_detalle.ResumeLayout(false);
             this.panel_detalle.PerformLayout();
@@ -739,6 +739,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel_detalle;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -758,17 +759,16 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ComboBox comboBox6;
