@@ -61,7 +61,7 @@ namespace iTechERP
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Ubuntu", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                   //  panelTitulo.BackColor = color;
                     panelLogo.BackColor = Temas.ChangeColorBrightness(color, -0.3);
                     Temas.PrimaryColor = color;
@@ -79,7 +79,7 @@ namespace iTechERP
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Ubuntu", 9.74F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
@@ -442,9 +442,12 @@ namespace iTechERP
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login lg = new Login();
-            lg.Show();
-            this.Hide();
+            if (MessageBox.Show("Está seguro que desea cerrar sección?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Login lg = new Login();
+                lg.Show();
+                this.Hide();
+            }
         }
 
         private void btnFacturasCompra_Click(object sender, EventArgs e)
@@ -570,6 +573,23 @@ namespace iTechERP
         private void btnMonedas_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Finanzas.Monedas_Consulta(), sender);
+        }
+        int valor = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            valor += 1;
+            if (this.Opacity < 1) this.Opacity += 0.05;
+            valor += 1;
+            if (valor == 100)
+            {
+                timer1.Stop();
+            }
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+            this.Opacity = 0.0;
+            timer1.Start();
         }
     }
 }

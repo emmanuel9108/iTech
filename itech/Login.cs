@@ -19,7 +19,7 @@ namespace iTechERP
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            btnIngresar.Focus();
         }
 
         private void txtUser_Enter(object sender, EventArgs e)

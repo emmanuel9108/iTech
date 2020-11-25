@@ -23,19 +23,39 @@ namespace iTechERP
         private void timer1_Tick(object sender, EventArgs e)
         {
             valor += 1;
-            CircleProgressBar.Value = valor;
-            if (CircleProgressBar.Value == 100)
+            //CircleProgressBar.Value = valor;
+            //if (CircleProgressBar.Value == 100)
+            //{
+                
+            //}
+
+            if (this.Opacity < 1) this.Opacity += 0.05;
+            CircleProgressBar.Value += 1;
+            if(CircleProgressBar.Value == 100)
             {
+                timer1.Stop();
+                timer2.Start();
+            }
+            
+        }
+
+        private void splash_Load(object sender, EventArgs e)
+        {
+            this.Opacity = 0.0;
+            timer1.Start();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.Opacity -= 0.1;
+            if (this.Opacity == 0)
+            {
+                timer2.Stop();
                 timer1.Enabled = false;
                 Login lg = new Login();
                 this.Hide();
                 lg.Show();
             }
-        }
-
-        private void splash_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
