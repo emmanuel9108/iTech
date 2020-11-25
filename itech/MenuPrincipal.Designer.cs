@@ -812,7 +812,7 @@
             this.panelSeguridad.Location = new System.Drawing.Point(0, 0);
             this.panelSeguridad.Margin = new System.Windows.Forms.Padding(2);
             this.panelSeguridad.Name = "panelSeguridad";
-            this.panelSeguridad.Size = new System.Drawing.Size(220, 966);
+            this.panelSeguridad.Size = new System.Drawing.Size(10, 966);
             this.panelSeguridad.TabIndex = 9;
             // 
             // btnRolesAccesos

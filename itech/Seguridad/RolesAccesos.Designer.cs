@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RolesAccesos));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -37,11 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +64,68 @@
             this.panel2.Size = new System.Drawing.Size(1065, 513);
             this.panel2.TabIndex = 43;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.checkBox4);
+            this.groupBox1.Font = new System.Drawing.Font("Ubuntu Light", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(81, 186);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(396, 174);
+            this.groupBox1.TabIndex = 68;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Permisos";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.Color.Navy;
+            this.checkBox2.Location = new System.Drawing.Point(254, 51);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(95, 24);
+            this.checkBox2.TabIndex = 65;
+            this.checkBox2.Text = "Adicionar";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.ForeColor = System.Drawing.Color.Navy;
+            this.checkBox3.Location = new System.Drawing.Point(254, 102);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(83, 24);
+            this.checkBox3.TabIndex = 67;
+            this.checkBox3.Text = "Eliminar";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.Navy;
+            this.checkBox1.Location = new System.Drawing.Point(47, 47);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(93, 24);
+            this.checkBox1.TabIndex = 64;
+            this.checkBox1.Text = "Visualizar";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.ForeColor = System.Drawing.Color.Navy;
+            this.checkBox4.Location = new System.Drawing.Point(47, 103);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(95, 24);
+            this.checkBox4.TabIndex = 66;
+            this.checkBox4.Text = "Modificar";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,9 +142,9 @@
             this.label5.Location = new System.Drawing.Point(77, 72);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 56;
-            this.label5.Text = "UsuarioID";
+            this.label5.Text = "RolID";
             // 
             // comboBox2
             // 
@@ -156,68 +218,6 @@
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Navy;
-            this.checkBox1.Location = new System.Drawing.Point(47, 47);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(93, 24);
-            this.checkBox1.TabIndex = 64;
-            this.checkBox1.Text = "Visualizar";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.Navy;
-            this.checkBox2.Location = new System.Drawing.Point(254, 51);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 24);
-            this.checkBox2.TabIndex = 65;
-            this.checkBox2.Text = "Adicionar";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.Navy;
-            this.checkBox3.Location = new System.Drawing.Point(254, 102);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(83, 24);
-            this.checkBox3.TabIndex = 67;
-            this.checkBox3.Text = "Eliminar";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.Navy;
-            this.checkBox4.Location = new System.Drawing.Point(47, 103);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(95, 24);
-            this.checkBox4.TabIndex = 66;
-            this.checkBox4.Text = "Modificar";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Font = new System.Drawing.Font("Ubuntu Light", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(81, 186);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 174);
-            this.groupBox1.TabIndex = 68;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Permisos";
             // 
             // RolesAccesos
             // 
