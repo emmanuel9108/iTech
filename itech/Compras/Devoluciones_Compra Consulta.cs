@@ -32,6 +32,7 @@ namespace iTechERP.Compras
             Devoluciones_Compra devoluciones_Compra = new Devoluciones_Compra();
             this.Close();
             devoluciones_Compra.Show();
+            
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

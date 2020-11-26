@@ -77,7 +77,7 @@ namespace iTechERP
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text == "jsantos" && txtPass.Text == "iTech")
+            if(txtUser.Text == "elorenzo" && txtPass.Text == "iTech")
             {
                 this.Hide();
                 MenuPrincipal MP = new MenuPrincipal();
