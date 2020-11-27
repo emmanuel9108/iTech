@@ -61,7 +61,7 @@ namespace iTechERP
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Ubuntu", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    currentButton.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                   //  panelTitulo.BackColor = color;
                     panelLogo.BackColor = Temas.ChangeColorBrightness(color, -0.3);
                     Temas.PrimaryColor = color;
