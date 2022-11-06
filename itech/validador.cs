@@ -9,6 +9,6 @@ namespace iTechERP
     class validador
     {
         public string user { get; set; }
-        public string password { get; set; }
+        public string password { get; set; } 
 }
 }

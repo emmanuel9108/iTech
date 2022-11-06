@@ -82,7 +82,7 @@ namespace iTechERP
             v.password = txtPass.Text;
             if (v.user == "elorenzo" && v.password == "iTech")
             {
-                this.Hide();
+                this.Hide(); 
                 MenuPrincipal MP = new MenuPrincipal();
                 MP.Show();
         
